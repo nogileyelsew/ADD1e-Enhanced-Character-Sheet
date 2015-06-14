@@ -1,0 +1,574 @@
+.sheet-col label {font-size:14px; display:block;width:100%;position:relative;height:1.8em;}
+.sheet-col label input {display:inline-block;top:0px;right:3px;position:absolute;height:100%; margin:auto 0;}
+.sheet-col label span.sheet-small {font-size:10px;}
+.sheet-text-med {font-size:13px; }
+.sheet-col input {width:64%;}
+button[type=roll] {line-height:0.85em;}
+.sheet-header {font-size:16px; font-weight: bold; margin-top:12px; margin-bottom:5px;}
+.sheet-col.sheet-header{margin-top:0;}
+
+.sheet-5colrow {display:block; text-align:left; width:100%;}
+.sheet-5colrow .sheet-col {vertical-align:top; display:inline-block; width:calc(19% - 30px); margin-right:30px;}
+.sheet-5colrow :last-child {margin-right: 0;}
+
+.sheet-6colrow {display:block;}
+.sheet-6colrow .sheet-col {vertical-align:top;display:inline-block;width:calc(16.67% - 30px); margin-right:30px;}
+.sheet-6colrow .sheet-col.sheet-span2 {width:calc(33.33% - 60px);float:none;}
+.sheet-6colrow .sheet-col.sheet-span3 {width:calc(50% - 90px);float:none;}
+.sheet-6colrow .sheet-col.sheet-span4 {width:calc(66.67% - 120px);float:none;}
+.sheet-6colrow .sheet-col.sheet-span5 {width:calc(83.33% - 150px);float:none;}
+.sheet-6colrow :last-child {margin-right: 0;}
+
+.sheet-7colrow {display:block; text-align:left;}
+.sheet-7colrow .sheet-col {vertical-align:top; display:inline-block; width:calc(14.28% - 30px); margin-right:30px;}
+.sheet-7colrow :last-child {margin-right: 0;}
+
+table {width:100%;  font-size:13px; text-align: center;}
+.sheet-table-left {width:100%;  font-size:13px; text-align: left;}
+.sheet-table-attributes {width:100%; text-align: left;}
+.sheet-table-thac0 {width:95%;  font-size:13px; text-align: center;}
+
+.sheet-table-ability {
+    text-align: center;
+    font-size: 90%;
+}
+
+.sheet-first-multi-class-show:not(:checked)~.sheet-first-multi-class {display:none;}
+.sheet-second-multi-class-show:not(:checked)~.sheet-second-multi-class {display:none;}
+.sheet-thief-skills-show:not(:checked)~.sheet-thief-skills {display:none;}
+.sheet-hide-show {margin-left:2px; margin-bottom::2px; font-size:10px;}
+
+/* ChARACTER INFORMATION (PRE-TAB) STYLING
+Underline Input */
+.sheet-underline {
+    text-align: center;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid;
+    border-left: none;
+    border-color: black;
+}
+
+/* Left Ability Column */
+.sheet-ability-left {
+    width: 8%;
+    margin: 1% 1% 1% 1%;
+    text-align: center;
+}
+
+/* Center Left Ability Column */
+.sheet-ability-center-left {
+    width: 55%;
+    margin: 1% 1% 1% 0%;
+    text-align: center;
+}
+
+/* Center Right Ability Column */
+.sheet-ability-center-right {
+    width: 24%;
+    margin: 1% 0% 1% 0%;
+    text-align: center;
+}
+
+/* Right Ability Column */
+.sheet-ability-right {
+    width: 8%;
+    margin: 1% 1% 1% 0%;
+    text-align: center;
+}
+
+/* Ability Input Style */
+input.sheet-ability {
+    text-align: center;
+    color: #8B0000;
+    font-size: 1.75em;
+    font-weight: bold;
+    border: none;
+    background-color:transparent;
+    margin-top: 12%;
+    margin-bottom: -8%;
+}
+
+/* Hit Point Input Style */
+input.sheet-hitpoint {
+    text-align: center;
+    color: #8B0000;
+    font-size: 3em;
+    font-weight: bold;
+    border: none;
+    background-color:transparent;
+    margin-top: 30%;
+    margin-left: 30%;
+}
+
+/* MaxHitPoint Input Style */
+input.sheet-maxhitpoint {
+    text-align: center;
+    color: #8B0000;
+    font-size: 1.75em;
+    font-weight: bold;
+    border: none;
+    background-color:transparent;
+    margin-top: 128%;
+    margin-left: 26%;
+}
+
+/* AC Input Style */
+input.sheet-ac {
+    text-align: center;
+    color: #386890;
+    font-size: 3em;
+    font-weight: bold;
+    border: none;
+    background-color:transparent;
+    margin-top: 18%;
+}
+
+/* Move Input Style */
+input.sheet-move {
+    text-align: center;
+    color: #FFCC00;
+    font-size: 3em;
+    font-weight: bold;
+    border: none;
+    background-color:transparent;
+    margin-top: 18%;
+}
+
+/* Weapon Block Style */
+.sheet-weapon-block {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #666666;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+/* Inverted Label Style */
+.sheet-inverted {
+    width: 100%;
+    color: white;
+    background-color: #386890;
+    border: none;
+}
+
+/* ~~~ THIEVERY TAB STYLING ~~~
+  Thievery Column */
+.sheet-thievery {
+    width: 40%;
+}
+
+/* Thievery Block Style */
+.sheet-thievery-block {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #666666;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+/* Inverted Indigo */
+.sheet-inverted-indigo {
+    width: 100%;
+    color: white;
+    background-color: #34005B;
+    border: none;
+}
+
+/* ~~~ SPELL TAB STYLING ~~~
+Inverted Teal Label Style */
+.sheet-inverted-teal {
+    width: 100%;
+    color: white;
+    background-color: #006666;
+    border: none;
+}
+
+/* Background Image HP <a href="http://imgur.com/Gi96Fro"><img src="http://i.imgur.com/Gi96Fro.jpg" title="source: imgur.com" /></a> */
+.sheet-background-hp {
+    background-image: url("http://i.imgur.com/Gi96Fro.jpg");
+    background-size: 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Background Image AC <a href="http://imgur.com/zKQYZE4"><img src="http://i.imgur.com/zKQYZE4.jpg" title="source: imgur.com" /></a> */
+.sheet-background-ac {
+    background-image: url("http://i.imgur.com/zKQYZE4.jpg");
+    background-size: 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Background Image Move <a href="http://imgur.com/TYvL2aI"><img src="http://i.imgur.com/TYvL2aI.jpg" title="source: imgur.com" /></a> */
+.sheet-background-move {
+    background-image: url("http://i.imgur.com/TYvL2aI.jpg");
+    background-size: 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Background Image Ability 2 <a href="http://imgur.com/saxsDiy"><img src="http://i.imgur.com/saxsDiy.jpg" title="source: imgur.com" /></a> */
+.sheet-background-ability-2 {
+    background-image: url("http://i.imgur.com/saxsDiy.jpg");
+    background-size: 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Background Image Inventory <a href="http://imgur.com/LrlX6Np"><img src="http://i.imgur.com/LrlX6Np.jpg" title="source: imgur.com" /></a>> */
+.sheet-background-inventory {
+    background-image: url("http://i.imgur.com/LrlX6Np.jpg");
+    background-size: 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+/* Inventory Doll Input Style */
+input.sheet-doll {
+    text-align: center;
+    color: #8B0000;
+    font-size: 1.5em;
+    border: none;
+    background-color:transparent;
+}
+
+/* Left Doll Colum */
+.sheet-doll-left {
+    width: 28%;
+    margin: 1.25% 0% 1% 1%;
+}
+
+/* Left Center Doll Colum */
+.sheet-doll-left-center {
+    width: 28%;
+    margin: 1.25% 1% 1% 0%;
+}
+
+/* Right Center Doll Colum */
+.sheet-doll-right-center {
+    width: 11.5%;
+    margin: 1.25% 0% 1% 0%;
+}
+
+/* Right Doll Colum */
+.sheet-doll-right {
+    width: 28%;
+    margin: 1.25% 1% 1% 0%;
+}
+
+/* Tab Styling */
+.charsheet div.sheet-tab-content {
+    display: none;
+}
+
+.charsheet input.sheet-tab1:checked ~ div.sheet-tab1,
+.charsheet input.sheet-tab2:checked ~ div.sheet-tab2,
+.charsheet input.sheet-tab3:checked ~ div.sheet-tab3,
+.charsheet input.sheet-tab4:checked ~ div.sheet-tab4,
+.charsheet input.sheet-tab5:checked ~ div.sheet-tab5 {
+    display: block;
+}
+
+.charsheet input.sheet-tab {
+    width: 164px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -1.5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.charsheet input.sheet-tab::before {
+    content: attr(title);
+    
+    border: solid 1px #a8a8a8;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    
+    background: black;
+    
+    width: 164px;
+    height: 20px;
+    font-size: 18px;
+}
+
+.charsheet input.sheet-tab:checked::before {
+    color: #000000;
+    font-weight: bold;
+    background: #fff;
+    border-top-color: #B2B2B2;
+    border-bottom-color: #B2B2B2;
+}
+
+.charsheet input.sheet-tab:not(:first-child)::before {
+    border-left: none;
+}
+
+.charsheet div.sheet-tab-content {
+    border: none;
+    border-top-color: #000;
+    margin: 2px 0 0 1px;
+    padding: 5px 0 0 0;
+}
+
+/* END TAB STYLING */
+
+/*Roll Templates*/
+/*Attacks*/
+.sheet-rolltemplate-attacks table {
+    width:100%;
+    background-color:white;
+	border:2px solid #000;
+	border-spacing: 0;
+	border-collapse: separate;
+	border-radius: 5px;
+  	-moz-box-shadow: 2px 2px 5px #000;
+	-webkit-box-shadow: 2px 2px 5px #000;
+	box-shadow:2px 2px 5px #000;
+    overflow: hidden;
+}
+
+.sheet-rolltemplate-attacks th {
+	background-color:#386890;
+	color:white;
+	font-family:"Helvetica Neue",Helvetica,sans-serif;
+	font-size:1em;
+	font-weight:bold;
+  	text-align: center;
+}
+
+.sheet-rolltemplate-attacks .sheet-subheader {
+	background-color:#386890;
+	color:white;
+	font-family:"Helvetica Neue",Helvetica,sans-serif;
+	font-size:0.9em;
+  	text-align: center;
+	padding-bottom: 5px;
+}
+
+.sheet-rolltemplate-attacks .sheet-tcat {
+	font-weight: bold;
+}
+
+.sheet-rolltemplate-attacks td {
+	padding:2px;
+	line-height:1em;
+	vertical-align:top;
+	text-align:right;
+}
+
+.sheet-rolltemplate-attacks .sheet-ToHit {
+	font-family: monospace;
+  	font-size: 10px;
+	line-height: .80em !important;
+}
+
+.sheet-rolltemplate-attacks tr:nth-child(odd) {
+	background-color:#FFFFFF;
+}
+
+.sheet-rolltemplate-attacks tr:nth-child(even) {
+	background-color:#D7D7D7;
+}
+
+.sheet-rolltemplate-attacks .inlinerollresult  {
+	display: inline-block;
+  	min-width: 1em;
+  	min-height: 1em;
+  	text-align: right;
+  	border: none;
+  	padding: 2px;
+    background: transparent;
+}
+
+.sheet-rolltemplate-attacks .inlinerollresult.fullcrit {
+	color: #3FB315;
+    background: transparent;
+    border: none;
+}
+
+.sheet-rolltemplate-attacks .inlinerollresult.fullfail {
+	color: #B31515;
+    background: transparent;
+    border: none;
+}
+
+.sheet-rolltemplate-attacks .inlinerollresult.importantroll {
+	color: #4A57ED;
+    background: transparent;
+    border: none;
+}
+
+/*General*/
+.sheet-rolltemplate-general table {
+    width:100%;
+	background-color:white;
+	border:2px solid #000;
+	border-spacing: 0;
+	border-collapse: separate;
+	border-radius: 5px;
+  	-moz-box-shadow: 2px 2px 5px #000;
+	-webkit-box-shadow: 2px 2px 5px #000;
+	box-shadow:2px 2px 5px #000;
+    overflow: hidden;
+}
+
+.sheet-rolltemplate-general th {
+	background-color:#000;
+	color:white;
+	font-family:"Helvetica Neue",Helvetica,sans-serif;
+	font-size:1em;
+	font-weight:bold;
+  	text-align: center;
+}
+
+.sheet-rolltemplate-general .sheet-subheader {
+	background-color:#000;
+	color:white;
+	font-family:"Helvetica Neue",Helvetica,sans-serif;
+	font-size:0.9em;
+  	text-align: center;
+	padding-bottom: 5px;
+}
+
+.sheet-rolltemplate-general .sheet-tcat {
+	font-weight: bold;
+}
+
+.sheet-rolltemplate-general td {
+	padding:2px;
+	line-height:1em;
+	vertical-align:top;
+	text-align:center;
+}
+
+.sheet-rolltemplate-general tr:nth-child(odd) {
+	background-color:#FFFFFF;
+}
+
+.sheet-rolltemplate-general tr:nth-child(even) {
+	background-color:#D7D7D7;
+}
+
+.sheet-rolltemplate-general .inlinerollresult  {
+	display: inline-block;
+  	min-width: 1em;
+  	min-height: 1em;
+  	text-align: right;
+  	border: none;
+  	padding: 2px;
+    background: transparent;
+}
+
+.sheet-rolltemplate-general .inlinerollresult.fullcrit {
+	color: #3FB315;
+    background: transparent;
+    border: none;
+}
+
+.sheet-rolltemplate-general .inlinerollresult.fullfail {
+	color: #B31515;
+    background: transparent;
+    border: none;
+}
+
+.sheet-rolltemplate-general .inlinerollresult.importantroll {
+	color: #4A57ED;
+    background: transparent;
+    border: none;
+}
+
+.sheet-rolltemplate-general .sheet-savethrow .inlinerollresult.importantroll {
+	color: #3FB315;
+    background: transparent;
+    border: none;
+}
+
+.sheet-rolltemplate-general .sheet-savethrow {
+	vertical-align:inherit;
+	font-weight:bold;
+}
+
+/* Thievery */
+.sheet-rolltemplate-thievery table {
+    width:100%;
+    background-color:white;
+	border:2px solid #000;
+	border-spacing: 0;
+	border-collapse: separate;
+	border-radius: 5px;
+  	-moz-box-shadow: 2px 2px 5px #000;
+	-webkit-box-shadow: 2px 2px 5px #000;
+	box-shadow:2px 2px 5px #000;
+    overflow: hidden;
+}
+
+.sheet-rolltemplate-thievery th {
+	background-color:#34005B;
+	color:white;
+	font-family:"Helvetica Neue",Helvetica,sans-serif;
+	font-size:1em;
+	font-weight:bold;
+  	text-align: center;
+}
+
+.sheet-rolltemplate-thievery .sheet-subheader {
+	background-color:#34005B;
+	color:white;
+	font-family:"Helvetica Neue",Helvetica,sans-serif;
+	font-size:0.9em;
+  	text-align: center;
+	padding-bottom: 5px;
+}
+
+.sheet-rolltemplate-thievery .sheet-tcat {
+	font-weight: bold;
+}
+
+.sheet-rolltemplate-thievery td {
+	padding:2px;
+	line-height:1em;
+	vertical-align:top;
+	text-align:center;
+}
+
+.sheet-rolltemplate-thievery tr:nth-child(odd) {
+	background-color:#FFFFFF;
+}
+
+.sheet-rolltemplate-thievery tr:nth-child(even) {
+	background-color:#D7D7D7;
+}
+
+.sheet-rolltemplate-thievery .inlinerollresult  {
+	display: inline-block;
+  	min-width: 1em;
+  	min-height: 1em;
+  	text-align: right;
+  	border: none;
+  	padding: 2px;
+    background: transparent;
+}
+
+.sheet-rolltemplate-thievery .inlinerollresult.fullcrit {
+	color: #3FB315;
+    background: transparent;
+    border: none;
+}
+
+.sheet-rolltemplate-thievery .inlinerollresult.fullfail {
+	color: #B31515;
+    background: transparent;
+    border: none;
+}
+
+.sheet-rolltemplate-thievery .inlinerollresult.importantroll {
+	color: #4A57ED;
+    background: transparent;
+    border: none;
+}
