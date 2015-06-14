@@ -1,0 +1,1192 @@
+<div class="sheet-3colrow">
+    <div class="sheet-col" style="width: 10%">&nbsp;</div>
+    <div class="sheet-col" style="width: 75%"><img src="http://i.imgur.com/0LTOdfZ.png" alt="Advanced D&amp;D" name="logo" align="middle"></div>
+    <h3 style="text-align: center">Character Record Sheet</h3>
+    <div class="sheet-col" style="width: 10%">&nbsp;</div>
+</div>
+
+<div class="sheet-colrow">
+    <table>
+        <tr>
+            <td><label>Name:<input class="sheet-underline" style="width: 75%" type="text" name="attr_character_name" title="@{character_name}" /></label></td>
+            <td><label>Class:<input class="sheet-underline" style="width: 75%" type="text" name="attr_Class" title="@{character_Class}" /></label></td>
+            <td><label>Level:<input class="sheet-underline" style="width: 75%" type="number" name="attr_Level" title="@{character_Level}"/></label></td>
+            <td><label>XP:<input class="sheet-underline" style="width: 75%" type="number" name="attr_XP" title="@{XP}" /></label></td>
+        </tr>
+    </table>
+    <span class="sheet-hide-show">First Multi-Class</span>
+    <input type="checkbox" class="sheet-first-multi-class-show sheet-small" title="first-multi-class-show" name="attr_first-multi-class-show" value="1" style="opacity:0;width: 80px;height: 16px;position: relative;top: -2px;left: -40px;margin: -40px;cursor: pointer;z-index: 1;" /><span></span>
+    <table class="sheet-first-multi-class sheet-table-attributes">
+        <tr>
+            <td><label>Class 2:<input class="sheet-underline" style="width: 75%" type="text" name="attr_SecondClass" title="@{SecondClass}" /></label></td>
+            <td><label>Level:<input class="sheet-underline" style="width: 75%" type="number" name="attr_Level_SecondClass" title="@{Level_SecondClass}" /></label></td>
+            <td><label>XP:<input class="sheet-underline" style="width: 75%" type="number" name="attr_XP_SecondClass" title="@{XP_SecondClass}" /></label></td>
+            <td></td>
+        </tr>
+    </table>
+    <span class="sheet-hide-show">Second Multi-Class</span>
+    <input type="checkbox" class="sheet-second-multi-class-show sheet-small" title="second-multi-class-show" name="attr_second-multi-class-show" value="1" style="opacity:0;width: 80px;height: 16px;position: relative;top: -2px;left: -40px;margin: -40px;cursor: pointer;z-index: 1;" /><span></span>
+    <table class="sheet-second-multi-class sheet-table-attributes">
+        <tr>
+            <td><label>Class 3:<input class="sheet-underline" style="width: 75%" type="text" name="attr_ThirdClass" title="@{ThirdClass}"/></label></td>
+            <td><label>Level:<input class="sheet-underline" style="width: 75%" type="number" name="attr_Level_ThirdClass" title="@{Level_ThirdClass}" /></label></td>
+            <td><label>XP:<input class="sheet-underline" style="width: 75%" type="number" name="attr_XP_ThirdClass" title="@{XP_ThirdClass}" /></label></td>
+            <td></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><label>Race:<input class="sheet-underline" style="width: 70%" type="text" name="attr_Race" title="@{Race}" /></label></td>
+            <td><label>Gender:<input class="sheet-underline" style="width: 60%" type="text" name="attr_Gender"  title="@{Gender}" /></label></td>
+            <td><label>Age:<input class="sheet-underline" style="width: 75%" type="number" name="attr_Age" title="@{Age}" /></label></td>
+            <td><label>Height:<input class="sheet-underline" style="width: 60%" type="text" name="attr_Height" title="@{Height}" /></label></td>
+            <td><label>Weight:<input class="sheet-underline" style="width: 60%" type="text" name="attr_Weight" title="@{Weight}" /></label></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><label>Vision:<input class="sheet-underline" style="width: 70%" type="text" name="attr_Vision" title="@{Vision}" /></label></td>
+            <td><label>Alignment:<input class="sheet-underline" style="width: 60%" type="text" name="attr_Alignment" title="@{character_Alignment}" /></label></td>
+            <td><label>Patron Deity:<input class="sheet-underline" style="width: 55%" type="text" name="attr_Deity" title="@{Deity}" /></label></td>
+            <td><label>Religion:<input class="sheet-underline" style="width: 60%" type="text" name="attr_Religion" title="@{Religion}" /></label></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><label>Origin:<input class="sheet-underline" style="width: 80%" type="text" name="attr_Origin" title="@{Origin}" /></label></td>
+            <td><label>Languages:<input class="sheet-underline" style="width: 75%" type="text" name="attr_Known_Languages" title="@{Known_Languages}" /></label></td>
+        </tr>
+    </table>
+</div>
+<div class="sheet-4colrow">
+    <div class="sheet-col sheet-background-hp" style="width: 15%">
+        <div class="sheet-2colrow">
+            <div class="sheet-col" style="width: 50%; margin: 0px">
+                <input class="sheet-hitpoint" style="width: 100%" type="text" name="attr_HitPoints" title="@{HitPoints}" value="0"/>
+            </div>
+            <div class="sheet-col">
+                <input class="sheet-maxhitpoint" style="width: 100%" type="text" name="attr_HitPoints_max" title="@{HitPoints_max}" value="0" /></label>
+            </div>
+        </div>
+        <label style="margin-top: 21%">Hit Dice:<input class="sheet-underline" style="width: 50%" type="text" name="attr_HitDice" title="@{HitDice}" /></label>
+    </div>
+    <div class="sheet-col sheet-background-ac" style="width: 15%">
+        <input class="sheet-ac" style="width: 100%" type="text" name="attr_ArmorClass" title="@{ArmorClass}" value="10"/>
+        <label style="margin-top: 33%">Armor:<input class="sheet-underline" style="width: 65%" type="text" name="attr_ArmorType" title="@{ArmorType}"/></label>
+    </div>
+    <div class="sheet-col sheet-background-move" style="width: 15%">
+        <input class="sheet-move" style="width: 100%" type="text" name="attr_Movement" title="@{Movement}" value="12" />
+        <label style="margin-top: 33%">Encumb.<input class="sheet-underline" style="width: 53%" type="text" name="attr_MovementEncumbrance" title="@{MovementEncumbrance}" value="None"/></label>
+    </div>
+    <div class="sheet-col">
+        <table>
+            <tr>
+                <td><button type="roll" value=";&{template:general} {{name=@{character_name} }} {{subtag=Initiative Check}} {{Initiative=[[1d6+@{SurpriseBonus}]] }}" name="roll_Initiative" title="%{Selected|Initiative}" > Initiative</button></td>
+            </tr>
+            <tr>
+                <td><button type="roll" value=";&{template:general} {{name=@{character_name} }} {{subtag=Blind Attempt at...}} {{(1d20) Roll=?? }}&#x00A;!broll 1d20+?{Modifiers|0}" name="roll_Blind20" title="%{Selected|Blind20}" > Blind (d20)</button></td>
+            </tr>
+            <tr>
+                <td><button type="roll" value=";&{template:general} {{name=@{character_name} }} {{subtag=Blind Attempt at...}} {{(1d100) Roll=??}}&#x00A;!broll 1d100+?{Modifiers|0}" name="roll_Blind100" title="%{Selected|Blind100}" > Blind (d100)</button></td>
+            </tr>
+            <tr>
+                <td><button type="roll" value=";&{template:general} {{name=@{character_name} }} {{subtag=Rolling the Dice}} {{?{Roll Name|Rolls for...}=[[?{Number of Dice|1}d?{Size of Die|20}+?{Modifiers|0}]] }}" name="roll_RolltheDice" title="%{Selected|RolltheDice}" > Roll the Dice</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Setting up Tabs for Bottom Part of Sheet -->
+<input type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" title="Abilities" checked="checked" />
+<input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2" title="Combat" />
+<input type="radio" name="attr_tab" class="sheet-tab sheet-tab3" value="3" title="Thievery" />
+<input type="radio" name="attr_tab" class="sheet-tab sheet-tab4" value="4" title="Spells" />
+<input type="radio" name="attr_tab" class="sheet-tab sheet-tab5" value="5" title="Inventory" />
+
+<!--Tab 1 (Abilities) -->
+<div class="sheet-tab-content sheet-tab1">
+    <div class="sheet-4colrow">
+        <div class="sheet-col sheet-ability-left">
+            <h3>Abilities</h3>
+            <div class="sheet-background-ability-2">
+                <input class="sheet-ability" style="width: 100%" type="text" name="attr_Strength" title="@{Strength}" value="10" />
+                <label style="text-align: center">STR</label>
+            </div>
+            <div class="sheet-background-ability-2">
+                <input class="sheet-ability" style="width: 100%" type="text" name="attr_Intelligence" title="@{Intelligence}"value="10" />
+                <label style="text-align: center">INT</label>
+            </div>
+            <div class="sheet-background-ability-2">
+                <input class="sheet-ability" style="width: 100%" type="text" name="attr_Wisdom" title="@{Wisdom}" value="10" />
+                <label style="text-align: center">WIS</label>
+            </div>
+            <div class="sheet-background-ability-2">
+                <input class="sheet-ability" style="width: 100%" type="text" name="attr_dexterity" title="@{dexterity}" value="10" />
+                <label style="text-align: center">DEX</label>
+            </div>
+            <div class="sheet-background-ability-2">
+                <input class="sheet-ability" style="width: 100%" type="text" name="attr_constitution" title="@{constitution}" value="10" />
+                <label style="text-align: center">CON</label>
+            </div>
+            <div class="sheet-background-ability-2">
+                <input class="sheet-ability" style="width: 100%" type="text" name="attr_Charisma" title="@{Charisma}" value="10" />
+                <label style="text-align: center">CHA</label>
+            </div>
+        </div>
+        <div class="sheet-col sheet-ability-center-left">
+            <h3>Adjustments</h3>
+            <table class="sheet-table-ability"> <!-- STR -->
+                <tr>
+                    <td>To Hit</td>
+                    <td>Damage Bonus</td>
+                    <td>Encumbrance</td>
+                    <td>Open Doors</td>
+                    <td>Bend Bars</td>
+                </tr>
+                <tr>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_MeleeBonus"  title="@{MeleeBonus}" value="0" /></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_DmgBonus" title="@{DmgBonus}" value="0" /></td>
+                    <td><input class="sheet-underline" type="text" style="width:60%;" name="attr_EncumbranceBonus" title="@{EncumbranceBonus}" value="0" /></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_MinorStrengthFeat" title="@{MinorStrengthFeat}" value="0" /></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_MajorStrengthFeat" title="@{MajorStrengthFeat}" value="0" /></td>
+                </tr>
+            </table>
+            <table class="sheet-table-ability" style="margin-top: 5%"> <!-- INT -->
+                <tr>
+                    <td>Add. Lang</td>
+                    <td>Spell Chance</td>
+                    <td>Min. Spells</td>
+                    <td>Max. Spells</td>
+                </tr>
+                <tr>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_BonusLanguages" title="@{BonusLanguages}" value="0"/></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_ChanceKnowEachSpell" title="@{ChanceKnowEachSpell}" value="0%"/></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_MinSpellperLevel" title="@{MinSpellperLevel}" value="0"/></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_MaxSpellperLevel" title="@{MaxSpellperLevel}" value="0"/></td>
+                </tr>
+            </table>
+            <table class="sheet-table-ability" style="margin-top: 5%"> <!-- WIS -->
+                <tr>
+                    <td>Mental Save</td>
+                    <td>Bonus 1st</td>
+                    <td>Bonus 2nd</td>
+                    <td>Bonus 3rd</td>
+                    <td>Bonus 4th</td>
+                    <td>Spell Fail</td>
+                </tr>
+                <tr>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_MentalSaveBonus" title="@{MentalSaveBonus}" value="0" /></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_BonusFirstSpell" title="@{BonusFirstSpell}" value="0"/></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_BonusSecondSpell" title="@{BonusSecondSpell}" value="0"/></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_BonusThirdSpell" title="@{BonusThirdSpell}" value="0"/></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_BonusFourthSpell" title="@{BonusFourthSpell}" value="0"/></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_ChanceSpellFailure" title="@{ChanceSpellFailure}" value="0%"/></td>
+                </tr>
+            </table>
+            <table class="sheet-table-ability" style="margin-top: 5%"> <!-- DEX -->
+                <tr>
+                    <td>Surprise</td>
+                    <td>Missile Hit</td>
+                    <td>AC Bonus</td>
+                </tr>
+                <tr>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_SurpriseBonus" title="@{SurpriseBonus}" value="0" /></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_RangedBonus" title="@{RangedBonus}" value="0" /></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_ArmorBonus" title="@{ArmorBonus}" value="0"/></td>
+                </tr>
+            </table>
+            <table class="sheet-table-ability" style="margin-top: 5%"> <!-- CON -->
+                <tr>
+                    <td>HP Bonus</td>
+                    <td>System Shock</td>
+                    <td>Res. Survive</td>
+                </tr>
+                <tr>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_HitPointBonus" title="@{HitPointBonus}" value="0" /></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_SystemShock" title="@{SystemShock}" value="0%" /></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_ResurrectionSurvival" title="@{ResurrectionSurvival}" value="0%"/></td>
+                </tr>
+            </table>
+            <table class="sheet-table-ability" style="margin-top: 5%"> <!-- CHA -->
+                <tr>
+                    <td>Max Henchmen</td>
+                    <td>Loyalty</td>
+                    <td>Reaction</td>
+                </tr>
+                <tr>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_MaximumHenchmen" title="@{MaximumHenchmen}" value="0" /></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_LoyaltyBonus" title="@{LoyaltyBonus}" value="0%" /></td>
+                    <td><input class="sheet-underline" type="text" style="width:50%;" name="attr_ReactionBonus" title="@{ReactionBonus}" value="0%"/></td>
+                </tr>
+            </table>
+        </div>
+        <div class="sheet-col sheet-ability-center-right">
+            <h3>Saving Throws</h3>
+            <table style="margin-top: 3%">
+                <tr>
+                    <td><button type="roll" value=";&{template:general} {{name=@{character_name} }} {{subtag=Saving Throw}} {{Rods, Staves, Wands=[[1d20cs>@{SaveRodsStavesWands}cf<@{SaveRodsStavesWands}]] }}" name="roll_SaveRodsStavesWands" title="%{Selected|SaveRodsStavesWands}" > Save vs.</button></td>
+                </tr>
+                <tr>
+                    <td><label style="text-align: center">Rod, Staff, Wand</label></td>
+                </tr>
+            </table>
+            <table style="margin-top: 5%">
+                <tr>
+                    <td><button type="roll" value="&{template:general} {{name=@{character_name} }} {{subtag=Saving Throw}} {{Breath Weapons=[[1d20cs>@{SaveBreathWeapons}cf<@{SaveBreathWeapons}]] }}" name="roll_SaveBreathWeapons" title="%{Selected|SaveBreathWeapons}" > Save vs.</button></td>
+                </tr>
+                <tr>
+                    <td><label style="text-align: center">Breath Weapon</label></td></td>
+                </tr>
+            </table>
+            <table style="margin-top: 6%">
+                <tr>
+                    <td><button type="roll" value="&{template:general} {{name=@{character_name} }} {{subtag=Saving Throw}} {{Paralysis, Poison, Death=[[1d20cs>@{SaveParalysisPoisonDeath}cf<@{SaveParalysisPoisonDeath}]] }}" name="roll_SaveParalysisPoisonDeath" title="%{Selected|SaveParalysisPoisonDeath}" > Save vs.</button></td>
+                </tr>
+                <tr>
+                    <td><label style="text-align: center">Paralysis, Poison, Death</label></td>
+                </tr>
+            </table>
+            <table style="margin-top: 7%">
+                <tr>
+                    <td><button type="roll" value="&{template:general} {{name=@{character_name} }} {{subtag=Saving Throw}} {{Petrification, Polymorph=[[1d20cs>@{SavePetrificationPolymorph}cf<@{SavePetrificationPolymorph}]] }}" name="roll_SavePetrificationPolymorph" title="%{Selected|SavePetrificationPolymorph}" > Save vs.</button></td>
+                </tr>
+                <tr>
+                    <td><label style="text-align: center">Petrification, Polymorph</label></td>
+                </tr>
+            </table>
+            <table style="margin-top: 4%">
+                <tr>
+                    <td><button type="roll" value="&{template:general} {{name=@{character_name} }} {{subtag=Saving Throw}} {{Spells=[[1d20cs>@{SaveSpells}cf<@{SaveSpells}]] }}" name="roll_SaveSpells" title="%{Selected|SaveSpells}" > Save vs.</button></td>
+                </tr>
+                <tr>
+                    <td><label style="text-align: center">Spells</label></td>
+                </tr>
+            </table>
+        </div>
+        <div class="sheet-col sheet-ability-right">
+            <h3>DC</h3>
+            <div class="sheet-background-ability-2">
+                <input class="sheet-ability" style="width: 100%" type="text" name="attr_SaveRodsStavesWands" title="@{SaveRodsStavesWands}" value="10" />
+                <label style="text-align: center">RSW</label>
+            </div>
+            <div class="sheet-background-ability-2">
+                <input class="sheet-ability" style="width: 100%" type="text" name="attr_SaveBreathWeapons" title="@{SaveBreathWeapons}" value="10"/>
+                <label style="text-align: center">BW</label>
+            </div>
+            <div class="sheet-background-ability-2">
+                <input class="sheet-ability" style="width: 100%" type="text" name="attr_SaveParalysisPoisonDeath" title="@{SaveParalysisPoisonDeath}" value="10" />
+                <label style="text-align: center">PPD</label>
+            </div>
+            <div class="sheet-background-ability-2">
+                <input class="sheet-ability" style="width: 100%" type="text" name="attr_SavePetrificationPolymorph" title="@{SavePetrificationPolymorph}" value="10"/>
+                <label style="text-align: center">PP</label>
+            </div>
+            <div class="sheet-background-ability-2">
+                <input class="sheet-ability" style="width: 100%" type="text" name="attr_SaveSpells" title="@{SaveSpells}" value="10"/>
+                <label style="text-align: center">S</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Tab 2 (Combat) -->
+<div class="sheet-tab-content sheet-tab2">
+    <h3 style="text-align:center;">Weapons</h3>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted" type="text" name="attr_Weapon1Name" title="@{Weapon1Name}" value="Weapon 1 Name"/>
+        <table>
+            <tr>
+                <td>Weapon 1</td>
+                <td>To Hit Bonus</td>
+                <td>Magic Bonus</td>
+                <td>Dmg Bonus</td>
+                <td>Damage S/M</td>
+                <td>Damage L</td>
+                <td>Speed</td>
+                <td>Rate Fire</td>
+                <td>Range S/M/L</td>
+                <td>Encum.</td>
+            </tr>
+            <tr>
+                <td><button type="roll" value="&{template:attacks} {{name=@{character_name} }} {{subtag=@{Weapon1Name} }} {{attack1=[[1d20 + @{Weapon1ToHitBonus}[To Hit Bonus] + @{Weapon1MagicBonus}[Magic Bonus] + ?{To Hit Modifier?|0}[To Hit Mod]) ]] }} {{hitac=[[@{THAC10}]]}} {{hitac10=[[@{THAC10}]]}} {{hitac9=[[@{THAC9}]]}} {{hitac8=[[@{THAC8}]]}} {{hitac7=[[@{THAC7}]]}} {{hitac6=[[@{THAC6}]]}} {{hitac5=[[@{THAC5}]]}} {{hitac4=[[@{THAC4}]]}} {{hitac3=[[@{THAC3}]]}} {{hitac2=[[@{THAC2}]]}} {{hitac1=[[@{THAC1}]]}} {{hitac0=[[@{THAC0}]]}} {{hitac-1=[[@{THAC-1}]]}} {{hitac-2=[[@{THAC-2}]]}} {{hitac-3=[[@{THAC-3}]]}} {{hitac-4=[[@{THAC-4}]]}} {{hitac-5=[[@{THAC-5}]]}} {{hitac-6=[[@{THAC-6}]]}} {{hitac-7=[[@{THAC-7}]]}} {{hitac-8=[[@{THAC-8}]]}} {{hitac-9=[[@{THAC-9}]]}} {{hitac-10=[[@{THAC-10}]]}} {{damage1vsSM=[[@{Weapon1DamageSmallMedium} + @{Weapon1DmgBonus}[Damage Bonus]  + @{Weapon1MagicBonus}[Magic Bonus] + ?{Damage Modifier?|0}[Damage Mod] ]] }} {{damage1vsL=[[@{Weapon1DamageLarge}  + @{Weapon1DmgBonus}[Damage Bonus]  + @{Weapon1MagicBonus}[Magic Bonus] + ?{Damage Modifier?|0}[Damage Mod] ]] }} {{critfail=[[ 1t[Critical_Failure] ]] }} {{critsuccess=[[ 1t[Critical_Success] ]]}}" name="roll_Weapon1Attack" title="%{Selected|Weapon1Attack}">Attack</button></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon1ToHitBonus" title="@{Weapon1ToHitBonus}" value="0" /></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon1MagicBonus" title="@{Weapon1MagicBonus}" value="0" /></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon1DmgBonus" title="@{Weapon1DmgBonus}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon1DamageSmallMedium" title="@{Weapon1DamageSmallMedium}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon1DamageLarge" title="@{Weapon1DamageLarge}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon1Speed" title="@{Weapon1Speed}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon1RateOfFire" title="@{Weapon1RateOfFire}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon1Range" title="@{Weapon1Range}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon1Encumbrance" title="@{Weapon1Encumbrance}" value="0" /></td>
+            </tr>
+        </table>
+    </div>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted" type="text" name="attr_Weapon2Name" title="@{Weapon2Name}" value="Weapon 2 Name"/>
+        <table>
+            <tr>
+                <td>Weapon 2</td>
+                <td>To Hit Bonus</td>
+                <td>Magic Bonus</td>
+                <td>Dmg Bonus</td>
+                <td>Damage S/M</td>
+                <td>Damage L</td>
+                <td>Speed</td>
+                <td>Rate Fire</td>
+                <td>Range S/M/L</td>
+                <td>Encum.</td>
+            </tr>
+            <tr>
+                <td><button type="roll" value="&{template:attacks} {{name=@{character_name} }} {{subtag=@{Weapon2Name} }} {{attack1=[[1d20 + @{Weapon2ToHitBonus}[To Hit Bonus] + @{Weapon2MagicBonus}[Magic Bonus] + ?{To Hit Modifier?|0}[To Hit Mod]) ]] }} {{hitac=[[@{THAC10}]]}} {{hitac10=[[@{THAC10}]]}} {{hitac9=[[@{THAC9}]]}} {{hitac8=[[@{THAC8}]]}} {{hitac7=[[@{THAC7}]]}} {{hitac6=[[@{THAC6}]]}} {{hitac5=[[@{THAC5}]]}} {{hitac4=[[@{THAC4}]]}} {{hitac3=[[@{THAC3}]]}} {{hitac2=[[@{THAC2}]]}} {{hitac1=[[@{THAC1}]]}} {{hitac0=[[@{THAC0}]]}} {{hitac-1=[[@{THAC-1}]]}} {{hitac-2=[[@{THAC-2}]]}} {{hitac-3=[[@{THAC-3}]]}} {{hitac-4=[[@{THAC-4}]]}} {{hitac-5=[[@{THAC-5}]]}} {{hitac-6=[[@{THAC-6}]]}} {{hitac-7=[[@{THAC-7}]]}} {{hitac-8=[[@{THAC-8}]]}} {{hitac-9=[[@{THAC-9}]]}} {{hitac-10=[[@{THAC-10}]]}} {{damage1vsSM=[[@{Weapon2DamageSmallMedium} + @{Weapon2DmgBonus}[Damage Bonus]  + @{Weapon2MagicBonus}[Magic Bonus] + ?{Damage Modifier?|0}[Damage Mod] ]] }} {{damage1vsL=[[@{Weapon2DamageLarge}  + @{Weapon2DmgBonus}[Damage Bonus]  + @{Weapon2MagicBonus}[Magic Bonus] + ?{Damage Modifier?|0}[Damage Mod] ]] }} {{critfail=[[ 1t[Critical_Failure] ]] }} {{critsuccess=[[ 1t[Critical_Success] ]]}}" name="roll_Weapon1Attack" title="%{Selected|Weapon2Attack}">Attack</button></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon2ToHitBonus" title="@{Weapon1ToHitBonus}" value="0" /></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon2MagicBonus" title="@{Weapon1MagicBonus}" value="0" /></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon2DmgBonus" title="@{Weapon1DmgBonus}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon2DamageSmallMedium" title="@{Weapon1DamageSmallMedium}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon2DamageLarge" title="@{Weapon1DamageLarge}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon2Speed" title="@{Weapon1Speed}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon2RateOfFire" title="@{Weapon1RateOfFire}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon2Range" title="@{Weapon1Range}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon2Encumbrance" title="@{Weapon1Encumbrance}" value="0" /></td>
+            </tr>
+        </table>
+    </div>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted" type="text" name="attr_Weapon3Name" title="@{Weapon3Name}" value="Weapon 3 Name"/>
+        <table>
+            <tr>
+                <td>Weapon 3</td>
+                <td>To Hit Bonus</td>
+                <td>Magic Bonus</td>
+                <td>Dmg Bonus</td>
+                <td>Damage S/M</td>
+                <td>Damage L</td>
+                <td>Speed</td>
+                <td>Rate Fire</td>
+                <td>Range S/M/L</td>
+                <td>Encum.</td>
+            </tr>
+            <tr>
+                <td><button type="roll" value="&{template:attacks} {{name=@{character_name} }} {{subtag=@{Weapon3Name} }} {{attack1=[[1d20 + @{Weapon3ToHitBonus}[To Hit Bonus] + @{Weapon3MagicBonus}[Magic Bonus] + ?{To Hit Modifier?|0}[To Hit Mod]) ]] }} {{hitac=[[@{THAC10}]]}} {{hitac10=[[@{THAC10}]]}} {{hitac9=[[@{THAC9}]]}} {{hitac8=[[@{THAC8}]]}} {{hitac7=[[@{THAC7}]]}} {{hitac6=[[@{THAC6}]]}} {{hitac5=[[@{THAC5}]]}} {{hitac4=[[@{THAC4}]]}} {{hitac3=[[@{THAC3}]]}} {{hitac2=[[@{THAC2}]]}} {{hitac1=[[@{THAC1}]]}} {{hitac0=[[@{THAC0}]]}} {{hitac-1=[[@{THAC-1}]]}} {{hitac-2=[[@{THAC-2}]]}} {{hitac-3=[[@{THAC-3}]]}} {{hitac-4=[[@{THAC-4}]]}} {{hitac-5=[[@{THAC-5}]]}} {{hitac-6=[[@{THAC-6}]]}} {{hitac-7=[[@{THAC-7}]]}} {{hitac-8=[[@{THAC-8}]]}} {{hitac-9=[[@{THAC-9}]]}} {{hitac-10=[[@{THAC-10}]]}} {{damage1vsSM=[[@{Weapon3DamageSmallMedium} + @{Weapon3DmgBonus}[Damage Bonus]  + @{Weapon3MagicBonus}[Magic Bonus] + ?{Damage Modifier?|0}[Damage Mod] ]] }} {{damage1vsL=[[@{Weapon3DamageLarge}  + @{Weapon3DmgBonus}[Damage Bonus]  + @{Weapon3MagicBonus}[Magic Bonus] + ?{Damage Modifier?|0}[Damage Mod] ]] }} {{critfail=[[ 1t[Critical_Failure] ]] }} {{critsuccess=[[ 1t[Critical_Success] ]]}}" name="roll_Weapon1Attack" title="%{Selected|Weapon3Attack}">Attack</button></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon3ToHitBonus" title="@{Weapon1ToHitBonus}" value="0" /></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon3MagicBonus" title="@{Weapon1MagicBonus}" value="0" /></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon3DmgBonus" title="@{Weapon1DmgBonus}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon3DamageSmallMedium" title="@{Weapon1DamageSmallMedium}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon3DamageLarge" title="@{Weapon1DamageLarge}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon3Speed" title="@{Weapon1Speed}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon3RateOfFire" title="@{Weapon1RateOfFire}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon3Range" title="@{Weapon1Range}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon3Encumbrance" title="@{Weapon1Encumbrance}" value="0" /></td>
+            </tr>
+        </table>
+    </div>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted" type="text" name="attr_Weapon4Name" title="@{Weapon4Name}" value="Weapon 4 Name"/>
+        <table>
+            <tr>
+                <td>Weapon 4</td>
+                <td>To Hit Bonus</td>
+                <td>Magic Bonus</td>
+                <td>Dmg Bonus</td>
+                <td>Damage S/M</td>
+                <td>Damage L</td>
+                <td>Speed</td>
+                <td>Rate Fire</td>
+                <td>Range S/M/L</td>
+                <td>Encum.</td>
+            </tr>
+            <tr>
+                <td><button type="roll" value="&{template:attacks} {{name=@{character_name} }} {{subtag=@{Weapon4Name} }} {{attack1=[[1d20 + @{Weapon4ToHitBonus}[To Hit Bonus] + @{Weapon4MagicBonus}[Magic Bonus] + ?{To Hit Modifier?|0}[To Hit Mod]) ]] }} {{hitac=[[@{THAC10}]]}} {{hitac10=[[@{THAC10}]]}} {{hitac9=[[@{THAC9}]]}} {{hitac8=[[@{THAC8}]]}} {{hitac7=[[@{THAC7}]]}} {{hitac6=[[@{THAC6}]]}} {{hitac5=[[@{THAC5}]]}} {{hitac4=[[@{THAC4}]]}} {{hitac3=[[@{THAC3}]]}} {{hitac2=[[@{THAC2}]]}} {{hitac1=[[@{THAC1}]]}} {{hitac0=[[@{THAC0}]]}} {{hitac-1=[[@{THAC-1}]]}} {{hitac-2=[[@{THAC-2}]]}} {{hitac-3=[[@{THAC-3}]]}} {{hitac-4=[[@{THAC-4}]]}} {{hitac-5=[[@{THAC-5}]]}} {{hitac-6=[[@{THAC-6}]]}} {{hitac-7=[[@{THAC-7}]]}} {{hitac-8=[[@{THAC-8}]]}} {{hitac-9=[[@{THAC-9}]]}} {{hitac-10=[[@{THAC-10}]]}} {{damage1vsSM=[[@{Weapon4DamageSmallMedium} + @{Weapon4DmgBonus}[Damage Bonus]  + @{Weapon4MagicBonus}[Magic Bonus] + ?{Damage Modifier?|0}[Damage Mod] ]] }} {{damage1vsL=[[@{Weapon4DamageLarge}  + @{Weapon4DmgBonus}[Damage Bonus]  + @{Weapon4MagicBonus}[Magic Bonus] + ?{Damage Modifier?|0}[Damage Mod] ]] }} {{critfail=[[ 1t[Critical_Failure] ]] }} {{critsuccess=[[ 1t[Critical_Success] ]]}}" name="roll_Weapon1Attack" title="%{Selected|Weapon4Attack}">Attack</button></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon4ToHitBonus" title="@{Weapon1ToHitBonus}" value="0" /></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon4MagicBonus" title="@{Weapon1MagicBonus}" value="0" /></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon4DmgBonus" title="@{Weapon1DmgBonus}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon4DamageSmallMedium" title="@{Weapon1DamageSmallMedium}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon4DamageLarge" title="@{Weapon1DamageLarge}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon4Speed" title="@{Weapon1Speed}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon4RateOfFire" title="@{Weapon1RateOfFire}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon4Range" title="@{Weapon1Range}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon4Encumbrance" title="@{Weapon1Encumbrance}" value="0" /></td>
+            </tr>
+        </table>
+    </div>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted" type="text" name="attr_Weapon5Name" title="@{Weapon5Name}" value="Weapon 5 Name"/>
+        <table>
+            <tr>
+                <td>Weapon 5</td>
+                <td>To Hit Bonus</td>
+                <td>Magic Bonus</td>
+                <td>Dmg Bonus</td>
+                <td>Damage S/M</td>
+                <td>Damage L</td>
+                <td>Speed</td>
+                <td>Rate Fire</td>
+                <td>Range S/M/L</td>
+                <td>Encum.</td>
+            </tr>
+            <tr>
+                <td><button type="roll" value="&{template:attacks} {{name=@{character_name} }} {{subtag=@{Weapon5Name} }} {{attack1=[[1d20 + @{Weapon5ToHitBonus}[To Hit Bonus] + @{Weapon5MagicBonus}[Magic Bonus] + ?{To Hit Modifier?|0}[To Hit Mod]) ]] }} {{hitac=[[@{THAC10}]]}} {{hitac10=[[@{THAC10}]]}} {{hitac9=[[@{THAC9}]]}} {{hitac8=[[@{THAC8}]]}} {{hitac7=[[@{THAC7}]]}} {{hitac6=[[@{THAC6}]]}} {{hitac5=[[@{THAC5}]]}} {{hitac4=[[@{THAC4}]]}} {{hitac3=[[@{THAC3}]]}} {{hitac2=[[@{THAC2}]]}} {{hitac1=[[@{THAC1}]]}} {{hitac0=[[@{THAC0}]]}} {{hitac-1=[[@{THAC-1}]]}} {{hitac-2=[[@{THAC-2}]]}} {{hitac-3=[[@{THAC-3}]]}} {{hitac-4=[[@{THAC-4}]]}} {{hitac-5=[[@{THAC-5}]]}} {{hitac-6=[[@{THAC-6}]]}} {{hitac-7=[[@{THAC-7}]]}} {{hitac-8=[[@{THAC-8}]]}} {{hitac-9=[[@{THAC-9}]]}} {{hitac-10=[[@{THAC-10}]]}} {{damage1vsSM=[[@{Weapon5DamageSmallMedium} + @{Weapon5DmgBonus}[Damage Bonus]  + @{Weapon5MagicBonus}[Magic Bonus] + ?{Damage Modifier?|0}[Damage Mod] ]] }} {{damage1vsL=[[@{Weapon5DamageLarge}  + @{Weapon5DmgBonus}[Damage Bonus]  + @{Weapon5MagicBonus}[Magic Bonus] + ?{Damage Modifier?|0}[Damage Mod] ]] }} {{critfail=[[ 1t[Critical_Failure] ]] }} {{critsuccess=[[ 1t[Critical_Success] ]]}}" name="roll_Weapon1Attack" title="%{Selected|Weapon5Attack}">Attack</button></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon5ToHitBonus" title="@{Weapon1ToHitBonus}" value="0" /></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon5MagicBonus" title="@{Weapon1MagicBonus}" value="0" /></td>
+                <td><input type="text" style="width:50%;" name="attr_Weapon5DmgBonus" title="@{Weapon1DmgBonus}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon5DamageSmallMedium" title="@{Weapon1DamageSmallMedium}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon5DamageLarge" title="@{Weapon1DamageLarge}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon5Speed" title="@{Weapon1Speed}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon5RateOfFire" title="@{Weapon1RateOfFire}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon5Range" title="@{Weapon1Range}" value="0" /></td>
+                <td><input type="text" style="width:75%;" name="attr_Weapon5Encumbrance" title="@{Weapon1Encumbrance}" value="0" /></td>
+            </tr>
+        </table>
+    </div>
+    <div class="sheet-header" style="text-align:center;">To Hit Armor Class</div>
+    <div class="sheet-weapon-block">
+        <table class="sheet-table-thac0">
+            <tr>
+                <th  style="background-color:#88A4BC;">-10</th>
+                <th>-9</th>
+                <th  style="background-color:#88A4BC;">-8</th>
+                <th>-7</th>
+                <th  style="background-color:#88A4BC;">-6</th>
+                <th>-5</th>
+                <th  style="background-color:#88A4BC;">-4</th>
+                <th>-3</th>
+                <th  style="background-color:#88A4BC;">-2</th>
+                <th>-1</th>
+                <th  style="background-color:#88A4BC;">0</th>
+                <th >1</th>
+                <th style="background-color:#88A4BC;">2</th>
+                <th>3</th>
+                <th style="background-color:#88A4BC;">4</th>
+                <th>5</th>
+                <th style="background-color:#88A4BC;">6</th>
+                <th>7</th>
+                <th style="background-color:#88A4BC;">8</th>
+                <th>9</th>
+                <th style="background-color:#88A4BC;">10</th>
+    	    </tr>
+    	    <tr>
+                <td style="background-color:#88A4BC;"><input type="text" style="width:2.8em;" name="attr_THAC-10" title="@{THAC-10}" value="10" /></td>
+                <td><input type="text" style="width:2.8em;" name="attr_THAC-9" title="@{THAC-9}" value="10" /></td>
+                <td style="background-color:#88A4BC;"><input type="text" style="width:2.8em;" name="attr_THAC-8"  title="@{THAC-8}" value="10" /></td>
+                <td><input type="text" style="width:2.8em;" name="attr_THAC-7" title="@{THAC-7}" value="10" /></td>
+                <td style="background-color:#88A4BC;"><input type="text" style="width:2.8em;" name="attr_THAC-6" title="@{THAC-6}" value="10" /></td>
+                <td><input type="text" style="width:2.8em;" name="attr_THAC-5" title="@{THAC-5}" value="10" /></td>
+                <td style="background-color:#88A4BC;"><input type="text" style="width:2.8em;" name="attr_THAC-4" title="@{THAC-4}" value="10" /></td>
+                <td><input type="text" style="width:2.8em;" name="attr_THAC-3" title="@{THAC-3}" value="10" /></td>
+                <td style="background-color:#88A4BC;"><input type="text" style="width:2.8em;" name="attr_THAC-2" title="@{THAC-2}" value="10" /></td>
+                <td><input type="text" style="width:2.8em;" name="attr_THAC-1" title="@{THAC-1}" value="10" /></td>
+                <td style="background-color:#88A4BC;"><input type="text" style="width:2.8em;" name="attr_THAC0" title="@{THAC0}" value="10" /></td>
+                <td><input type="text" style="width:2.8em;" name="attr_THAC1" title="@{THAC1}" value="10" /></td>
+                <td style="background-color:#6086A6;"><input type="text" style="width:2.8em;" name="attr_THAC2" title="@{THAC2}" value="10" /></td>
+                <td><input type="text" style="width:2.8em;" name="attr_THAC3" title="@{THAC3}" value="10" /></td>
+                <td style="background-color:#88A4BC;"><input type="text" style="width:2.9em;" name="attr_THAC4" title="@{THAC4}" value="10" /></td>
+                <td><input type="text" style="width:2.8em;" name="attr_THAC5" title="@{THAC5}" value="10" /></td>
+                <td style="background-color:#88A4BC;"><input type="text" style="width:2.8em;" name="attr_THAC6" title="@{THAC6}" value="10" /></td>
+                <td><input type="text" style="width:2.8em;" name="attr_THAC7" title="@{THAC7}" value="10" /></td>
+                <td style="background-color:#88A4BC;"><input type="text" style="width:2.8em;" name="attr_THAC8" title="@{THAC8}" value="10" /></td>
+                <td><input type="text" style="width:2.8em;" name="attr_THAC9" title="@{THAC9}" value="10" /></td>
+                <td style="background-color:#88A4BC;"><input type="text" style="width:2.8em;" name="attr_THAC10" title="@{THAC10}" value="10" /></td>
+    	    </tr>
+        </table>
+    </div>
+
+    <div class="sheet-header" style="text-align:center;">This Section will Depreciate Soonish</div>
+    <div style="border:1px solid gray; border-radius: 10px; padding-bottom:5px;">
+    <table>
+	    <tr>
+		    <th>Attack 0</th>
+		    <th>Attack 1</th>
+		    <th>Attack 2</th>
+		    <th>Attack 3</th>
+		    <th>Attack 4</th>
+            <th>Attack 5</th>
+        </tr>
+        <tr>
+		    <td><button type="roll" value="/me attacks!&#x00A;&{template:attacks} {{name=@{selected|token_name} }} {{subtag=@{selected|repeating_weapon_0_WeaponName} }} {{attack1=[[1d20 + @{selected|repeating_weapon_0_ToHitBonus|0}[BON] + @{selected|repeating_weapon_0_MagicBonus|0}[MAG] + ?{To Hit Modifier?|0}[MOD]) ]] }} {{damage1vsSM=[[@{selected|repeating_weapon_0_DamageSmallMedium} + @{selected|repeating_weapon_0_DmgBonus}[BON]  + @{selected|repeating_weapon_0_MagicBonus|0}[MAG] + ?{Damage Modifier?|0}[MOD] ]] }} {{damage1vsL=[[@{selected|repeating_weapon_0_DamageLarge}  + @{selected|repeating_weapon_0_DmgBonus}[BON]  + @{selected|repeating_weapon_0_MagicBonus|0}[MAG] + ?{Damage Modifier?|0}[MOD] ]] }}&#x00A;/w gm &{template:attacks} {{name=@{selected|token_name} }} {{subtag=To Hit Armor Class}} {{ToHitAC-10to0=@{selected|THAC-10}|@{selected|THAC-9}|@{selected|THAC-8}|@{selected|THAC-7}|@{selected|THAC-6}|@{selected|THAC-5}|@{selected|THAC-4}|@{selected|THAC-3}|@{selected|THAC-2}|@{selected|THAC-1}|**@{selected|THAC0}**}}  {{ToHitAC1to10=**@{selected|THAC0}**|@{selected|THAC1}|@{selected|THAC2}|@{selected|THAC3}|@{selected|THAC4}|@{selected|THAC5}|@{selected|THAC6}|@{selected|THAC7}|@{selected|THAC8}|@{selected|THAC9}|@{selected|THAC10} }}" name="roll_repeating_weapon_0_Attack" title="%{selected|repeating_weapon_0_Attack}"> Roll</button></td>
+            <td><button type="roll" value="/me attacks!&#x00A;&{template:attacks} {{name=@{selected|token_name} }} {{subtag=@{selected|repeating_weapon_1_WeaponName} }} {{attack1=[[1d20 + @{selected|repeating_weapon_1_ToHitBonus|0}[BON] + @{selected|repeating_weapon_1_MagicBonus|0}[MAG] + ?{To Hit Modifier?|0}[MOD]) ]] }} {{damage1vsSM=[[@{selected|repeating_weapon_1_DamageSmallMedium} + @{selected|repeating_weapon_1_DmgBonus}[BON]  + @{selected|repeating_weapon_1_MagicBonus|0}[MAG] + ?{Damage Modifier?|0}[MOD] ]] }} {{damage1vsL=[[@{selected|repeating_weapon_1_DamageLarge}  + @{selected|repeating_weapon_1_DmgBonus}[BON]  + @{selected|repeating_weapon_1_MagicBonus|0}[MAG] + ?{Damage Modifier?|0}[MOD] ]] }}&#x00A;/w gm &{template:attacks} {{name=@{selected|token_name} }} {{subtag=To Hit Armor Class}} {{ToHitAC-10to0=@{selected|THAC-10}|@{selected|THAC-9}|@{selected|THAC-8}|@{selected|THAC-7}|@{selected|THAC-6}|@{selected|THAC-5}|@{selected|THAC-4}|@{selected|THAC-3}|@{selected|THAC-2}|@{selected|THAC-1}|**@{selected|THAC0}**}}  {{ToHitAC1to10=**@{selected|THAC0}**|@{selected|THAC1}|@{selected|THAC2}|@{selected|THAC3}|@{selected|THAC4}|@{selected|THAC5}|@{selected|THAC6}|@{selected|THAC7}|@{selected|THAC8}|@{selected|THAC9}|@{selected|THAC10} }}" name="roll_repeating_weapon_1_Attack" title="%{selected|repeating_weapon_1_Attack}"> Roll</button></td>
+            <td><button type="roll" value="/me attacks!&#x00A;&{template:attacks} {{name=@{selected|token_name} }} {{subtag=@{selected|repeating_weapon_2_WeaponName} }} {{attack1=[[1d20 + @{selected|repeating_weapon_2_ToHitBonus|0}[BON] + @{selected|repeating_weapon_2_MagicBonus|0}[MAG] + ?{To Hit Modifier?|0}[MOD]) ]] }} {{damage1vsSM=[[@{selected|repeating_weapon_2_DamageSmallMedium} + @{selected|repeating_weapon_2_DmgBonus}[BON]  + @{selected|repeating_weapon_2_MagicBonus|0}[MAG] + ?{Damage Modifier?|0}[MOD] ]] }} {{damage1vsL=[[@{selected|repeating_weapon_2_DamageLarge}  + @{selected|repeating_weapon_2_DmgBonus}[BON]  + @{selected|repeating_weapon_2_MagicBonus|0}[MAG] + ?{Damage Modifier?|0}[MOD] ]] }}&#x00A;/w gm &{template:attacks} {{name=@{selected|token_name} }} {{subtag=To Hit Armor Class}} {{ToHitAC-10to0=@{selected|THAC-10}|@{selected|THAC-9}|@{selected|THAC-8}|@{selected|THAC-7}|@{selected|THAC-6}|@{selected|THAC-5}|@{selected|THAC-4}|@{selected|THAC-3}|@{selected|THAC-2}|@{selected|THAC-1}|**@{selected|THAC0}**}}  {{ToHitAC1to10=**@{selected|THAC0}**|@{selected|THAC1}|@{selected|THAC2}|@{selected|THAC3}|@{selected|THAC4}|@{selected|THAC5}|@{selected|THAC6}|@{selected|THAC7}|@{selected|THAC8}|@{selected|THAC9}|@{selected|THAC10} }}" name="roll_repeating_weapon_2_Attack" title="%{selected|repeating_weapon_2_Attack}"> Roll</button></td>
+            <td><button type="roll" value="/me attacks!&#x00A;&{template:attacks} {{name=@{selected|token_name} }} {{subtag=@{selected|repeating_weapon_3_WeaponName} }} {{attack1=[[1d20 + @{selected|repeating_weapon_3_ToHitBonus|0}[BON] + @{selected|repeating_weapon_3_MagicBonus|0}[MAG] + ?{To Hit Modifier?|0}[MOD]) ]] }} {{damage1vsSM=[[@{selected|repeating_weapon_3_DamageSmallMedium} + @{selected|repeating_weapon_3_DmgBonus}[BON]  + @{selected|repeating_weapon_3_MagicBonus|0}[MAG] + ?{Damage Modifier?|0}[MOD] ]] }} {{damage1vsL=[[@{selected|repeating_weapon_3_DamageLarge}  + @{selected|repeating_weapon_3_DmgBonus}[BON]  + @{selected|repeating_weapon_3_MagicBonus|0}[MAG] + ?{Damage Modifier?|0}[MOD] ]] }}&#x00A;/w gm &{template:attacks} {{name=@{selected|token_name} }} {{subtag=To Hit Armor Class}} {{ToHitAC-10to0=@{selected|THAC-10}|@{selected|THAC-9}|@{selected|THAC-8}|@{selected|THAC-7}|@{selected|THAC-6}|@{selected|THAC-5}|@{selected|THAC-4}|@{selected|THAC-3}|@{selected|THAC-2}|@{selected|THAC-1}|**@{selected|THAC0}**}}  {{ToHitAC1to10=**@{selected|THAC0}**|@{selected|THAC1}|@{selected|THAC2}|@{selected|THAC3}|@{selected|THAC4}|@{selected|THAC5}|@{selected|THAC6}|@{selected|THAC7}|@{selected|THAC8}|@{selected|THAC9}|@{selected|THAC10} }}" name="roll_repeating_weapon_3_Attack" title="%{selected|repeating_weapon_3_Attack}"> Roll</button></td>
+            <td><button type="roll" value="/me attacks!&#x00A;&{template:attacks} {{name=@{selected|token_name} }} {{subtag=@{selected|repeating_weapon_4_WeaponName} }} {{attack1=[[1d20 + @{selected|repeating_weapon_4_ToHitBonus|0}[BON] + @{selected|repeating_weapon_4_MagicBonus|0}[MAG] + ?{To Hit Modifier?|0}[MOD]) ]] }} {{damage1vsSM=[[@{selected|repeating_weapon_4_DamageSmallMedium} + @{selected|repeating_weapon_4_DmgBonus}[BON]  + @{selected|repeating_weapon_4_MagicBonus|0}[MAG] + ?{Damage Modifier?|0}[MOD] ]] }} {{damage1vsL=[[@{selected|repeating_weapon_4_DamageLarge}  + @{selected|repeating_weapon_4_DmgBonus}[BON]  + @{selected|repeating_weapon_4_MagicBonus|0}[MAG] + ?{Damage Modifier?|0}[MOD] ]] }}&#x00A;/w gm &{template:attacks} {{name=@{selected|token_name} }} {{subtag=To Hit Armor Class}} {{ToHitAC-10to0=@{selected|THAC-10}|@{selected|THAC-9}|@{selected|THAC-8}|@{selected|THAC-7}|@{selected|THAC-6}|@{selected|THAC-5}|@{selected|THAC-4}|@{selected|THAC-3}|@{selected|THAC-2}|@{selected|THAC-1}|**@{selected|THAC0}**}}  {{ToHitAC1to10=**@{selected|THAC0}**|@{selected|THAC1}|@{selected|THAC2}|@{selected|THAC3}|@{selected|THAC4}|@{selected|THAC5}|@{selected|THAC6}|@{selected|THAC7}|@{selected|THAC8}|@{selected|THAC9}|@{selected|THAC10} }}" name="roll_repeating_weapon_4_Attack" title="%{selected|repeating_weapon_4_Attack}"> Roll</button></td>
+            <td><button type="roll" value="/me attacks!&#x00A;&{template:attacks} {{name=@{selected|token_name} }} {{subtag=@{selected|repeating_weapon_5_WeaponName} }} {{attack1=[[1d20 + @{selected|repeating_weapon_5_ToHitBonus|0}[BON] + @{selected|repeating_weapon_5_MagicBonus|0}[MAG] + ?{To Hit Modifier?|0}[MOD]) ]] }} {{damage1vsSM=[[@{selected|repeating_weapon_5_DamageSmallMedium} + @{selected|repeating_weapon_5_DmgBonus}[BON]  + @{selected|repeating_weapon_5_MagicBonus|0}[MAG] + ?{Damage Modifier?|0}[MOD] ]] }} {{damage1vsL=[[@{selected|repeating_weapon_5_DamageLarge}  + @{selected|repeating_weapon_5_DmgBonus}[BON]  + @{selected|repeating_weapon_5_MagicBonus|0}[MAG] + ?{Damage Modifier?|0}[MOD] ]] }}&#x00A;/w gm &{template:attacks} {{name=@{selected|token_name} }} {{subtag=To Hit Armor Class}} {{ToHitAC-10to0=@{selected|THAC-10}|@{selected|THAC-9}|@{selected|THAC-8}|@{selected|THAC-7}|@{selected|THAC-6}|@{selected|THAC-5}|@{selected|THAC-4}|@{selected|THAC-3}|@{selected|THAC-2}|@{selected|THAC-1}|**@{selected|THAC0}**}}  {{ToHitAC1to10=**@{selected|THAC0}**|@{selected|THAC1}|@{selected|THAC2}|@{selected|THAC3}|@{selected|THAC4}|@{selected|THAC5}|@{selected|THAC6}|@{selected|THAC7}|@{selected|THAC8}|@{selected|THAC9}|@{selected|THAC10} }}" name="roll_repeating_weapon_5_Attack" title="%{selected|repeating_weapon_5_Attack}"> Roll</button></td>
+        </tr>
+    </table>
+    </div>
+    <div class="sheet-header" >WEAPONS</div>
+
+    <fieldset class="repeating_weapon">
+    <div style="border:1px solid gray; border-radius: 10px; padding-bottom:5px;">
+    <div class="sheet-5colrow" style="text-align:center;">
+        <div class="sheet-col sheet-header"><span class="sheet-text-med">Weapon Type</span></div>
+	    <div class="sheet-col sheet-header"><span class="sheet-text-med">To-Hit Bonus</span></div>
+        <div class="sheet-col sheet-header"><span class="sheet-text-med">Magic Bonus</span></div>
+        <div class="sheet-col sheet-header"><span class="sheet-text-med">Damage Bonus</span></div>
+        <div class="sheet-col sheet-header"><span class="sheet-text-med">Speed</span></div>
+
+    </div>
+    <div class="sheet-5colrow" style="text-align:center;">
+        <div class="sheet-col"><input type="text" style="width:100%; margin-top:-5px;" name="attr_WeaponName" title="@{repeating_weapon_X_WeaponName}" /></div>
+        <div class="sheet-col"><input type="text" style="width:50%; margin-top:-5px;" name="attr_ToHitBonus" title="@{repeating_weapon_X_ToHitBonus}" /></div>
+        <div class="sheet-col"><input type="text" style="width:50%; margin-top:-5px;" name="attr_MagicBonus" title="@{repeating_weapon_X_MagicBonus}" /></div>
+        <div class="sheet-col"><input type="text" style="width:50%; margin-top:-5px;" name="attr_DmgBonus" title="@{repeating_weapon_X_DmgBonus}" /></div>
+        <div class="sheet-col"><input type="text" style="width:50%; margin-top:-5px;" name="attr_WeaponSpeed" title="@{repeating_weapon_X_WeaponSpeed}" /></div>
+    </div>
+    <div class="sheet-5colrow" style="text-align:center;">
+        <div class="sheet-col sheet-header"><span class="sheet-text-med">Damage vs S/M</span></div>
+        <div class="sheet-col sheet-header"><span class="sheet-text-med">Damage vs L</span></div>
+        <div class="sheet-col sheet-header"><span class="sheet-text-med">Rate of Fire</span></div>
+        <div class="sheet-col sheet-header"><span class="sheet-text-med">Range S/M/L</span></div>
+        <div class="sheet-col sheet-header"><span class="sheet-text-med">Encum.</span></div>
+    </div>
+    <div class="sheet-5colrow" style="text-align:center;">
+        <div class="sheet-col"><input type="text" style="width:50%; margin-top:-5px;" name="attr_DamageSmallMedium" title="@{repeating_weapon_X_DamageSmallMedium}" /></div>
+        <div class="sheet-col"><input type="text" style="width:50%; margin-top:-5px;" name="attr_DamageLarge" title="@{repeating_weapon_X_DamageLarge}" /></div>
+        <div class="sheet-col"><input type="text" style="width:50%; margin-top:-5px;" name="attr_RateOfFire" title="@{repeating_weapon_X_RateOfFire}" /></div>
+        <div class="sheet-col"><input type="text" style="width:50%; margin-top:-5px;" name="attr_Range" title="@{repeating_weapon_X_Range}" /></div>
+        <div class="sheet-col"><input type="text" style="width:50%; margin-top:-5px;" name="attr_Encumbrance" title="@{repeating_weapon_X_Encumbrance}" /></div>
+    </div>
+    </div>
+    </fieldset>
+</div>
+
+<!--Tab 3 (Thievery) -->
+<div class="sheet-tab-content sheet-tab3">
+<h3 Style="text-align: center">Skills</h3>
+    <div class="sheet-2colrow">
+        <div class="sheet-col sheet-thievery">    
+            <div class="sheet-thievery-block">
+                <input class="sheet-inverted-indigo" style="width:100%" type="text" name="attr_thief_skill_1" title="@{thief_skill_1}" value="Pick Pockets" />
+                <table>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Ability Check}} {{Pick Pockets=[[1d100cs<@{PickPockets_Total}cf>@{PickPockets_Total}]] }}" name="roll_PickPockets" title="%{Selected|PickPockets}" > Attempt</button></td>
+                        <td>Total %</td>
+                        <td>Base %</td>
+                        <td>Racial %</td>
+                        <td>Dexterity %</td>
+                    </tr>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Blind Attempt at...}} {{Pick Pockets=?? }}&#x00A;!broll 1d100<?{Pick Pockets Total|0}" name="roll_PickPocketsBlind" title="%{Selected|PickPocketsBlind}" > Blind Roll</button></td>
+                        <td><input type="number" name="attr_PickPockets_Total" title="@{PickPockets_Total}" value="[[@{PickPockets}+@{PickPockets_Racial}+@{PickPockets_Dexterity}]]" disabled="disabled" /></td>
+                        <td><input type="number" name="attr_PickPockets" title="@{PickPockets}" value="0" /></td>
+                        <td><input type="number" name="attr_PickPockets_Racial" title="@{PickPockets_Racial}" value="0" /></td>
+                        <td><input type="number" name="attr_PickPockets_Dexterity" title="@{PickPockets_Dexterity}" value="0" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sheet-thievery-block">
+                <input class="sheet-inverted-indigo" style="width:100%" type="text" name="attr_thief_skill_2" title="@{thief_skill_2}" value="Open Locks" />
+                <table>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Ability Check}} {{Open Locks=[[1d100cs<@{OpenLocks_Total}cf>@{OpenLocks_Total}]] }}" name="roll_OpenLocks" title="%{Selected|OpenLocks}" > Attempt</button></td>
+                        <td>Total %</td>
+                        <td>Base %</td>
+                        <td>Racial %</td>
+                        <td>Dexterity %</td>
+                    </tr>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Blind Attempt at...}} {{Open Locks=?? }}&#x00A;!broll 1d100<?{Open Locks Total|0}" name="roll_OpenLocksBlind" title="%{Selected|OpenLocksBlind}" > Blind Roll</button></td>
+                        <td><input type="number" name="attr_OpenLocks_Total" title="@{OpenLocks_Total}" value="[[@{OpenLocks}+@{OpenLocks_Racial}+@{OpenLocks_Dexterity}]]" disabled="disabled" /></td>
+                        <td><input type="number" name="attr_OpenLocks" title="@{OpenLocks}" value="0" /></td>
+                        <td><input type="number" name="attr_OpenLocks_Racial" title="@{OpenLocks_Racial}" value="0" /></td>
+                        <td><input type="number" name="attr_OpenLocks_Dexterity" title="@{OpenLocks_Dexterity}" value="0" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sheet-thievery-block">
+                <input class="sheet-inverted-indigo" style="width:100%" type="text" name="attr_thief_skill_3" title="@{thief_skill_3}" value="Find/Remove Traps" />
+                <table>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Ability Check}} {{Find Traps=[[1d100cs<@{FindTraps_Total}cf>@{FindTraps_Total}]] }}" name="roll_FindTraps" title="%{Selected|FindTraps}" > Attempt</button></td>
+                        <td>Total %</td>
+                        <td>Base %</td>
+                        <td>Racial %</td>
+                        <td>Dexterity %</td>
+                    </tr>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Blind Attempt at...}} {{Find Traps=?? }}&#x00A;!broll 1d100<?{Find Traps Total|0}" name="roll_FindTrapsBlind" title="%{Selected|FindTrapsBlind}" > Blind Roll</button></td>
+                        <td><input type="number" name="attr_FindTraps_Total" title="@{FindTraps_Total}" value="[[@{FindTraps}+@{FindTraps_Racial}+@{FindTraps_Dexterity}]]" disabled="disabled" /></td>
+                        <td><input type="number" name="attr_FindTraps" title="@{FindTraps}" value="0" /></td>
+                        <td><input type="number" name="attr_FindTraps_Racial" title="@{FindTraps_Racial}" value="0" /></td>
+                        <td><input type="number" name="attr_FindTraps_Dexterity" title="@{FindTraps_Dexterity}" value="0" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sheet-thievery-block">
+                <input class="sheet-inverted-indigo" style="width:100%" type="text" name="attr_thief_skill_4" title="@{thief_skill_4}" value="Move Silently" />
+                <table>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Ability Check}} {{Move Silently=[[1d100cs<@{MoveQuietly_Total}cf>@{MoveQuietly_Total}]] }}" name="roll_MoveQuietly" title="%{Selected|MoveQuietly}" > Attempt</button></td>
+                        <td>Total %</td>
+                        <td>Base %</td>
+                        <td>Racial %</td>
+                        <td>Dexterity %</td>
+                    </tr>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Blind Attempt at...}} {{Move Silently=?? }}&#x00A;!broll 1d100<?{Move Silently Total|0}" name="roll_MoveQuietly" title="%{Selected|MoveQuietlyBlind}" > Blind Roll</button></td>
+                        <td><input type="number" name="attr_MoveQuietly_Total" title="@{MoveQuietly_Total}" value="[[@{MoveQuietly}+@{MoveQuietly_Racial}+@{MoveQuietly_Dexterity}]]" disabled="disabled" /></td>
+                        <td><input type="number" name="attr_MoveQuietly" title="@{MoveQuietly}" value="0" /></td>
+                        <td><input type="number" name="attr_MoveQuietly_Racial" title="@{MoveQuietly_Racial}" value="0" /></td>
+                        <td><input type="number" name="attr_MoveQuietly_Dexterity" title="@{MoveQuietly_Dexterity}" value="0" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div> <!-- END COLUMN 1 -->
+        <div class="sheet-col sheet-thievery">    
+            <div class="sheet-thievery-block">
+                <input class="sheet-inverted-indigo" style="width:100%" type="text" name="attr_thief_skill_5" title="@{thief_skill_5}" value="Hide in Shadows" />
+                <table>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Ability Check}} {{Hide in Shadows=[[1d100cs<@{HideInShadows_Total}cf>@{HideInShadows_Total}]] }}" name="roll_HideInShadows" title="%{Selected|HideInShadows}" > Attempt</button></td>
+                        <td>Total %</td>
+                        <td>Base %</td>
+                        <td>Racial %</td>
+                        <td>Dexterity %</td>
+                    </tr>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Blind Attempt at...}} {{Hide in Shadows=?? }}&#x00A;!broll 1d100<?{Hide in Shadows Total|0}" name="roll_HideInShadowsBlind" title="%{Selected|HideInShadowsBlind}" > Blind Roll</button></td>
+                        <td><input type="number" name="attr_HideInShadows_Total" title="@{HideInShadows_Total}" value="[[@{HideInShadows}+@{HideInShadows_Racial}+@{HideInShadows_Dexterity}]]" disabled="disabled" /></td>
+                        <td><input type="number" name="attr_HideInShadows" title="@{HideInShadows}" value="0" /></td>
+                        <td><input type="number" name="attr_HideInShadows_Racial" title="@{HideInShadows_Racial}" value="0" /></td>
+                        <td><input type="number" name="attr_HideInShadows_Dexterity" title="@{HideInShadows_Dexterity}" value="0" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sheet-thievery-block">
+                <input class="sheet-inverted-indigo" style="width:100%" type="text" name="attr_thief_skill_6" title="@{thief_skill_6}" value="Hear Noise" />
+                <table>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Ability Check}} {{Hear Noise=[[1d100cs<@{HearNoise_Total}cf>@{HearNoise_Total}]] }}" name="roll_HearNoise" title="%{Selected|HearNoise}" > Attempt</button></td>
+                        <td>Total %</td>
+                        <td>Base %</td>
+                        <td>Racial %</td>
+                        <td>Dexterity %</td>
+                    </tr>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Blind Attempt at...}} {{Hear Noise=?? }}&#x00A;!broll 1d100<?{Hear Noise Total|0}" name="roll_HearNoiseBlind" title="%{Selected|HearNoiseBlind}" > Blind Roll</button></td>
+                        <td><input type="number" name="attr_HearNoise_Total" title="@{HearNoise_Total}" value="[[@{HearNoise}+@{HearNoise_Racial}+@{HearNoise_Dexterity}]]" disabled="disabled" /></td>
+                        <td><input type="number" name="attr_HearNoise" title="@{HearNoise}" value="0" /></td>
+                        <td><input type="number" name="attr_HearNoise_Racial" title="@{HearNoise_Racial}" value="0" /></td>
+                        <td><input type="number" name="attr_HearNoise_Dexterity" title="@{HearNoise_Dexterity}" value="0" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sheet-thievery-block">
+                <input class="sheet-inverted-indigo" style="width:100%" type="text" name="attr_thief_skill_7" title="@{thief_skill_7}" value="Climb Walls" />
+                <table>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Ability Check}} {{Climb Walls=[[1d100cs<@{ClimbWalls_Total}cf>@{ClimbWalls_Total}]] }}" name="roll_ClimbWalls" title="%{Selected|ClimbWalls}" > Attempt</button></td>
+                        <td>Total %</td>
+                        <td>Base %</td>
+                        <td>Racial %</td>
+                        <td>Dexterity %</td>
+                    </tr>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Blind Attempt at...}} {{Climb Walls=?? }}&#x00A;!broll 1d100<?{Climb Walls Total|0}" name="roll_ClimbWallsBlind" title="%{Selected|ClimbWallsBlind}" > Blind Roll</button></td>
+                        <td><input type="number" name="attr_ClimbWalls_Total" title="@{ClimbWalls_Total}" value="[[@{ClimbWalls}+@{ClimbWalls_Racial}+@{ClimbWalls_Dexterity}]]" disabled="disabled" /></td>
+                        <td><input type="number" name="attr_ClimbWalls" title="@{ClimbWalls}" value="0" /></td>
+                        <td><input type="number" name="attr_ClimbWalls_Racial" title="@{ClimbWalls_Racial}" value="0" /></td>
+                        <td><input type="number" name="attr_ClimbWalls_Dexterity" title="@{ClimbWalls_Dexterity}" value="0" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sheet-thievery-block">
+                <input class="sheet-inverted-indigo" style="width:100%" type="text" name="attr_thief_skill_8" title="@{thief_skill_8}" value="Read Languages" />
+                <table>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Ability Check}} {{Read Languages=[[1d100cs<@{ReadLanguages_Total}cf>@{ReadLanguages_Total}]] }}" name="roll_ReadLanguages" title="%{Selected|ReadLanguages}" > Attempt</button></td>
+                        <td>Total %</td>
+                        <td>Base %</td>
+                        <td>Racial %</td>
+                        <td>Dexterity %</td>
+                    </tr>
+                    <tr>
+                        <td><button type="roll" value="&{template:thievery} {{name=@{character_name} }} {{subtag=Blind Attempt at...}} {{Read Languages=?? }}&#x00A;!broll 1d100<?{Read Languages Total|0}</button>" name="roll_ReadLanguagesBlind" title="%{Selected|ReadLanguagesBlind}" > Blind Roll</button></td>
+                        <td><input type="number" name="attr_ReadLanguages_Total" title="@{ReadLanguages_Total}" value="[[@{ReadLanguages}+@{ReadLanguages_Racial}+@{ReadLanguages_Dexterity}]]" disabled="disabled" /></td>
+                        <td><input type="number" name="attr_ReadLanguages" title="@{ReadLanguages}" value="0" /></td>
+                        <td><input type="number" name="attr_ReadLanguages_Racial" title="@{ReadLanguages_Racial}" value="0" /></td>
+                        <td><input type="number" name="attr_ReadLanguages_Dexterity" title="@{ReadLanguages_Dexterity}" value="0" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Tab 4 (Spells) -->
+<div class="sheet-tab-content sheet-tab4">
+    <h3 style="text-align: center">Spells</h3>
+    <h3 style="text-align: center">Place holder for now, will Improve</h3>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted-teal" type="text" name="attr_Spell_1_Name" title="@{Spell_1_Name}" value="Spell 1 Name"/>
+        <table style="text-align: left">
+            <tr>
+        	    <td>Level:<input type="text" style="width:20%;" name="attr_Spell_1_Level" title="@{Spell_1_Level}" value="1" /></td>
+                <td>Prepared Once: <input type="checkbox" name="attr_Spell_1_Prep_1" value="1" /></td>
+			    <td>Prepared Twice: <input type="checkbox" name="attr_Spell_1_Prep_2" value="1" /></td>
+                <td><button type="roll" value="&{template:general} {{name=@{character_name} }} {{subtag=Casts @{Spell_1_Name} }} {{description=@{Spell_1_Description} }}" name="roll_Spell_1" title="%{Selected|Spell_1}"> Cast</button></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Components:<input type="text" style="width: 50%;" name="attr_Spell_1_Components" title="@{Spell_1_Components}" value="None" /></td>
+                <td>Range:<input type="text" style="width: 65%;" name="attr_Spell_1_Range" title="@{Spell_1_Range}" value="0" /></td>
+                <td>Cast Time:<input type="text" style="width:55%;" name="attr_Spell_1_CastTime" title="@{Spell_1_CastTime}" value="0" /></td>
+                <td>Duration:<input type="text" style="width:60%;" name="attr_Spell_1_Duration" title="@{Spell_1_Duration}" value="0" /></td>
+                <td>Save:<input type="text" style="width:70%;" name="attr_Spell_1_Save" title="@{Spell_1_Save}" value="None" /></td>
+                <td>AoE:<input type="text" style="width:75%;" name="attr_Spell_1_AreaofEffect" title="@{Spell_1_AreaofEffect}" value="None" /></td>
+            </tr>
+        </table>
+	    <textarea style="width: 98.5%" name="attr_Spell_1_Description" title="Spell_1_Description" >Description...</textarea>
+    </div>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted-teal" type="text" name="attr_Spell_2_Name" title="@{Spell_2_Name}" value="Spell 2 Name"/>
+        <table style="text-align: left">
+            <tr>
+    		    <td>Level:<input type="text" style="width:20%;" name="attr_Spell_2_Level" title="@{Spell_2_Level}" value="0" /></td>
+                <td>Prepared Once: <input type="checkbox" name="attr_Spell_2_Prep_1" value="1" /></td>
+			    <td>Prepared Twice: <input type="checkbox" name="attr_Spell_2_Prep_2" value="1" /></td>
+                <td><button type="roll" value="&{template:general} {{name=@{character_name} }} {{subtag=Casts @{Spell_2_Name} }} {{description=@{Spell_2_Description} }}" name="roll_Spell_2" title="%{Selected|Spell_2}"> Cast</button></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Components:<input type="text" style="width: 50%;" name="attr_Spell_2_Components" title="@{Spell_2_Components}" value="None" /></td>
+                <td>Range:<input type="text" style="width: 65%;" name="attr_Spell_2_Range" title="@{Spell_2_Range}" value="0" /></td>
+                <td>Cast Time:<input type="text" style="width:55%;" name="attr_Spell_2_CastTime" title="@{Spell_2_CastTime}" value="0" /></td>
+                <td>Duration:<input type="text" style="width:60%;" name="attr_Spell_2_Duration" title="@{Spell_2_Duration}" value="0" /></td>
+                <td>Save:<input type="text" style="width:70%;" name="attr_Spell_2_Save" title="@{Spell_2_Save}" value="None" /></td>
+                <td>AoE:<input type="text" style="width:75%;" name="attr_Spell_2_AreaofEffect" title="@{Spell_2_AreaofEffect}" value="None" /></td>
+            </tr>
+        </table>
+	    <textarea style="width: 98.5%" name="attr_Spell_2_Description" title="Spell_2_Description" >Description...</textarea>
+    </div>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted-teal" type="text" name="attr_Spell_3_Name" title="@{Spell_3_Name}" value="Spell 3 Name"/>
+        <table style="text-align: left">
+            <tr>
+    		    <td>Level:<input type="text" style="width:20%;" name="attr_Spell_3_Level" title="@{Spell_3_Level}" value="0" /></td>
+                <td>Prepared Once: <input type="checkbox" name="attr_Spell_3_Prep_1" value="1" /></td>
+			    <td>Prepared Twice: <input type="checkbox" name="attr_Spell_3_Prep_2" value="1" /></td>
+                <td><button type="roll" value="&{template:general} {{name=@{character_name} }} {{subtag=Casts @{Spell_3_Name} }} {{description=@{Spell_3_Description} }}" name="roll_Spell_3" title="%{Selected|Spell_3}"> Cast</button></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Components:<input type="text" style="width: 50%;" name="attr_Spell_3_Components" title="@{Spell_3_Components}" value="None" /></td>
+                <td>Range:<input type="text" style="width: 65%;" name="attr_Spell_3_Range" title="@{Spell_3_Range}" value="0" /></td>
+                <td>Cast Time:<input type="text" style="width:55%;" name="attr_Spell_3_CastTime" title="@{Spell_3_CastTime}" value="0" /></td>
+                <td>Duration:<input type="text" style="width:60%;" name="attr_Spell_3_Duration" title="@{Spell_3_Duration}" value="0" /></td>
+                <td>Save:<input type="text" style="width:70%;" name="attr_Spell_3_Save" title="@{Spell_3_Save}" value="None" /></td>
+                <td>AoE:<input type="text" style="width:75%;" name="attr_Spell_3_AreaofEffect" title="@{Spell_3_AreaofEffect}" value="None" /></td>
+            </tr>
+        </table>
+	    <textarea style="width: 98.5%" name="attr_Spell_3_Description" title="Spell_3_Description" >Description...</textarea>
+    </div>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted-teal" type="text" name="attr_Spell_4_Name" title="@{Spell_4_Name}" value="Spell 4 Name"/>
+        <table style="text-align: left">
+            <tr>
+    		    <td>Level:<input type="text" style="width:20%;" name="attr_Spell_4_Level" title="@{Spell_4_Level}" value="0" /></td>
+                <td>Prepared Once: <input type="checkbox" name="attr_Spell_4_Prep_1" value="1" /></td>
+			    <td>Prepared Twice: <input type="checkbox" name="attr_Spell_4_Prep_2" value="1" /></td>
+                <td><button type="roll" value="&{template:general} {{name=@{character_name} }} {{subtag=Casts @{Spell_4_Name} }} {{description=@{Spell_4_Description} }}" name="roll_Spell_4" title="%{Selected|Spell_4}"> Cast</button></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Components:<input type="text" style="width: 50%;" name="attr_Spell_4_Components" title="@{Spell_4_Components}" value="None" /></td>
+                <td>Range:<input type="text" style="width: 65%;" name="attr_Spell_4_Range" title="@{Spell_4_Range}" value="0" /></td>
+                <td>Cast Time:<input type="text" style="width:55%;" name="attr_Spell_4_CastTime" title="@{Spell_4_CastTime}" value="0" /></td>
+                <td>Duration:<input type="text" style="width:60%;" name="attr_Spell_4_Duration" title="@{Spell_4_Duration}" value="0" /></td>
+                <td>Save:<input type="text" style="width:70%;" name="attr_Spell_4_Save" title="@{Spell_4_Save}" value="None" /></td>
+                <td>AoE:<input type="text" style="width:75%;" name="attr_Spell_4_AreaofEffect" title="@{Spell_4_AreaofEffect}" value="None" /></td>
+            </tr>
+        </table>
+	    <textarea style="width: 98.5%" name="attr_Spell_4_Description" title="Spell_4_Description" >Description...</textarea>
+    </div>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted-teal" type="text" name="attr_Spell_5_Name" title="@{Spell_5_Name}" value="Spell 5 Name"/>
+        <table style="text-align: left">
+            <tr>
+    		    <td>Level:<input type="text" style="width:20%;" name="attr_Spell_5_Level" title="@{Spell_5_Level}" value="0" /></td>
+                <td>Prepared Once: <input type="checkbox" name="attr_Spell_5_Prep_1" value="1" /></td>
+			    <td>Prepared Twice: <input type="checkbox" name="attr_Spell_5_Prep_2" value="1" /></td>
+                <td><button type="roll" value="&{template:general} {{name=@{character_name} }} {{subtag=Casts @{Spell_5_Name} }} {{description=@{Spell_5_Description} }}" name="roll_Spell_5" title="%{Selected|Spell_5}"> Cast</button></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Components:<input type="text" style="width: 50%;" name="attr_Spell_5_Components" title="@{Spell_5_Components}" value="None" /></td>
+                <td>Range:<input type="text" style="width: 65%;" name="attr_Spell_5_Range" title="@{Spell_5_Range}" value="0" /></td>
+                <td>Cast Time:<input type="text" style="width:55%;" name="attr_Spell_5_CastTime" title="@{Spell_5_CastTime}" value="0" /></td>
+                <td>Duration:<input type="text" style="width:60%;" name="attr_Spell_5_Duration" title="@{Spell_5_Duration}" value="0" /></td>
+                <td>Save:<input type="text" style="width:70%;" name="attr_Spell_5_Save" title="@{Spell_5_Save}" value="None" /></td>
+                <td>AoE:<input type="text" style="width:75%;" name="attr_Spell_5_AreaofEffect" title="@{Spell_5_AreaofEffect}" value="None" /></td>
+            </tr>
+        </table>
+	    <textarea style="width: 98.5%" name="attr_Spell_5_Description" title="Spell_5_Description" >Description...</textarea>
+    </div>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted-teal" type="text" name="attr_Spell_6_Name" title="@{Spell_6_Name}" value="Spell 6 Name"/>
+        <table style="text-align: left">
+            <tr>
+    		    <td>Level:<input type="text" style="width:20%;" name="attr_Spell_6_Level" title="@{Spell_6_Level}" value="0" /></td>
+                <td>Prepared Once: <input type="checkbox" name="attr_Spell_6_Prep_1" value="1" /></td>
+			    <td>Prepared Twice: <input type="checkbox" name="attr_Spell_6_Prep_2" value="1" /></td>
+                <td><button type="roll" value="&{template:general} {{name=@{character_name} }} {{subtag=Casts @{Spell_6_Name} }} {{description=@{Spell_6_Description} }}" name="roll_Spell_6" title="%{Selected|Spell_6}"> Cast</button></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Components:<input type="text" style="width: 50%;" name="attr_Spell_6_Components" title="@{Spell_6_Components}" value="None" /></td>
+                <td>Range:<input type="text" style="width: 65%;" name="attr_Spell_6_Range" title="@{Spell_6_Range}" value="0" /></td>
+                <td>Cast Time:<input type="text" style="width:55%;" name="attr_Spell_6_CastTime" title="@{Spell_6_CastTime}" value="0" /></td>
+                <td>Duration:<input type="text" style="width:60%;" name="attr_Spell_6_Duration" title="@{Spell_6_Duration}" value="0" /></td>
+                <td>Save:<input type="text" style="width:70%;" name="attr_Spell_6_Save" title="@{Spell_6_Save}" value="None" /></td>
+                <td>AoE:<input type="text" style="width:75%;" name="attr_Spell_6_AreaofEffect" title="@{Spell_6_AreaofEffect}" value="None" /></td>
+            </tr>
+        </table>
+	    <textarea style="width: 98.5%" name="attr_Spell_6_Description" title="Spell_6_Description" >Description...</textarea>
+    </div>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted-teal" type="text" name="attr_Spell_7_Name" title="@{Spell_7_Name}" value="Spell 7 Name"/>
+        <table style="text-align: left">
+            <tr>
+    		    <td>Level:<input type="text" style="width:20%;" name="attr_Spell_7_Level" title="@{Spell_7_Level}" value="0" /></td>
+                <td>Prepared Once: <input type="checkbox" name="attr_Spell_7_Prep_1" value="1" /></td>
+			    <td>Prepared Twice: <input type="checkbox" name="attr_Spell_7_Prep_2" value="1" /></td>
+                <td><button type="roll" value="&{template:general} {{name=@{character_name} }} {{subtag=Casts @{Spell_7_Name} }} {{description=@{Spell_7_Description} }}" name="roll_Spell_7" title="%{Selected|Spell_7}"> Cast</button></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Components:<input type="text" style="width: 50%;" name="attr_Spell_7_Components" title="@{Spell_7_Components}" value="None" /></td>
+                <td>Range:<input type="text" style="width: 65%;" name="attr_Spell_7_Range" title="@{Spell_7_Range}" value="0" /></td>
+                <td>Cast Time:<input type="text" style="width:55%;" name="attr_Spell_7_CastTime" title="@{Spell_7_CastTime}" value="0" /></td>
+                <td>Duration:<input type="text" style="width:60%;" name="attr_Spell_7_Duration" title="@{Spell_7_Duration}" value="0" /></td>
+                <td>Save:<input type="text" style="width:70%;" name="attr_Spell_7_Save" title="@{Spell_7_Save}" value="None" /></td>
+                <td>AoE:<input type="text" style="width:75%;" name="attr_Spell_7_AreaofEffect" title="@{Spell_7_AreaofEffect}" value="None" /></td>
+            </tr>
+        </table>
+	    <textarea style="width: 98.5%" name="attr_Spell_7_Description" title="Spell_7_Description" >Description...</textarea>
+    </div>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted-teal" type="text" name="attr_Spell_8_Name" title="@{Spell_8_Name}" value="Spell 8 Name"/>
+        <table style="text-align: left">
+            <tr>
+    		    <td>Level:<input type="text" style="width:20%;" name="attr_Spell_8_Level" title="@{Spell_8_Level}" value="0" /></td>
+                <td>Prepared Once: <input type="checkbox" name="attr_Spell_8_Prep_1" value="1" /></td>
+			    <td>Prepared Twice: <input type="checkbox" name="attr_Spell_8_Prep_2" value="1" /></td>
+                <td><button type="roll" value="&{template:general} {{name=@{character_name} }} {{subtag=Casts @{Spell_8_Name} }} {{description=@{Spell_8_Description} }}" name="roll_Spell_8" title="%{Selected|Spell_8}"> Cast</button></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Components:<input type="text" style="width: 50%;" name="attr_Spell_8_Components" title="@{Spell_8_Components}" value="None" /></td>
+                <td>Range:<input type="text" style="width: 65%;" name="attr_Spell_8_Range" title="@{Spell_8_Range}" value="0" /></td>
+                <td>Cast Time:<input type="text" style="width:55%;" name="attr_Spell_8_CastTime" title="@{Spell_8_CastTime}" value="0" /></td>
+                <td>Duration:<input type="text" style="width:60%;" name="attr_Spell_8_Duration" title="@{Spell_3_Duration}" value="0" /></td>
+                <td>Save:<input type="text" style="width:70%;" name="attr_Spell_8_Save" title="@{Spell_8_Save}" value="None" /></td>
+                <td>AoE:<input type="text" style="width:75%;" name="attr_Spell_8_AreaofEffect" title="@{Spell_8_AreaofEffect}" value="None" /></td>
+            </tr>
+        </table>
+	    <textarea style="width: 98.5%" name="attr_Spell_8_Description" title="Spell_8_Description" >Description...</textarea>
+    </div>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted-teal" type="text" name="attr_Spell_9_Name" title="@{Spell_9_Name}" value="Spell 9 Name"/>
+        <table style="text-align: left">
+            <tr>
+    		    <td>Level:<input type="text" style="width:20%;" name="attr_Spell_9_Level" title="@{Spell_9_Level}" value="0" /></td>
+                <td>Prepared Once: <input type="checkbox" name="attr_Spell_9_Prep_1" value="1" /></td>
+			    <td>Prepared Twice: <input type="checkbox" name="attr_Spell_9_Prep_2" value="1" /></td>
+                <td><button type="roll" value="&{template:general} {{name=@{character_name} }} {{subtag=Casts @{Spell_9_Name} }} {{description=@{Spell_9_Description} }}" name="roll_Spell_9" title="%{Selected|Spell_9}"> Cast</button></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Components:<input type="text" style="width: 50%;" name="attr_Spell_9_Components" title="@{Spell_9_Components}" value="None" /></td>
+                <td>Range:<input type="text" style="width: 65%;" name="attr_Spell_9_Range" title="@{Spell_9_Range}" value="0" /></td>
+                <td>Cast Time:<input type="text" style="width:55%;" name="attr_Spell_9_CastTime" title="@{Spell_9_CastTime}" value="0" /></td>
+                <td>Duration:<input type="text" style="width:60%;" name="attr_Spell_9_Duration" title="@{Spell_9_Duration}" value="0" /></td>
+                <td>Save:<input type="text" style="width:70%;" name="attr_Spell_9_Save" title="@{Spell_9_Save}" value="None" /></td>
+                <td>AoE:<input type="text" style="width:75%;" name="attr_Spell_9_AreaofEffect" title="@{Spell_9_AreaofEffect}" value="None" /></td>
+            </tr>
+        </table>
+	    <textarea style="width: 98.5%" name="attr_Spell_9_Description" title="Spell_9_Description" >Description...</textarea>
+    </div>
+    <div class="sheet-weapon-block">
+        <input class="sheet-inverted-teal" type="text" name="attr_Spell_5_Name" title="@{Spell_5_Name}" value="Spell 5 Name"/>
+        <table style="text-align: left">
+            <tr>
+    		    <td>Level:<input type="text" style="width:20%;" name="attr_Spell_10_Level" title="@{Spell_10_Level}" value="0" /></td>
+                <td>Prepared Once: <input type="checkbox" name="attr_Spell_10_Prep_1" value="1" /></td>
+			    <td>Prepared Twice: <input type="checkbox" name="attr_Spell_10_Prep_2" value="1" /></td>
+                <td><button type="roll" value="&{template:general} {{name=@{character_name} }} {{subtag=Casts @{Spell_10_Name} }} {{description=@{Spell_10_Description} }}" name="roll_Spell_10" title="%{Selected|Spell_10}"> Cast</button></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Components:<input type="text" style="width: 50%;" name="attr_Spell_10_Components" title="@{Spell_10_Components}" value="None" /></td>
+                <td>Range:<input type="text" style="width: 65%;" name="attr_Spell_10_Range" title="@{Spell_10_Range}" value="0" /></td>
+                <td>Cast Time:<input type="text" style="width:55%;" name="attr_Spell_10_CastTime" title="@{Spell_10_CastTime}" value="0" /></td>
+                <td>Duration:<input type="text" style="width:60%;" name="attr_Spell_10_Duration" title="@{Spell_10_Duration}" value="0" /></td>
+                <td>Save:<input type="text" style="width:70%;" name="attr_Spell_10_Save" title="@{Spell_10_Save}" value="None" /></td>
+                <td>AoE:<input type="text" style="width:75%;" name="attr_Spell_10_AreaofEffect" title="@{Spell_10_AreaofEffect}" value="None" /></td>
+            </tr>
+        </table>
+	    <textarea style="width: 98.5%" name="attr_Spell_10_Description" title="Spell_10_Description" >Description...</textarea>
+    </div>
+</div>
+
+<!--Tab 5 (Inventory) -->
+<div class="sheet-tab-content sheet-tab5 sheet-background-inventory">
+    <div class="sheet-4colrow">
+        <div class="sheet-col sheet-doll-left">
+            <div>
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Face" title="@{Inventory_Face}" value="Empty"/>
+            </div>
+            <div style="margin-top: 38%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Throat" title="@{Inventory_Throat}" value="Empty"/>
+            </div>
+            <div style="margin-top: 62%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Body" title="@{Inventory_Body}" value="Empty"/>
+            </div>
+            <div style="margin-top: 56%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Hands" title="@{Inventory_Hands}" value="Empty"/>
+            </div>
+            <div style="margin-top: 48%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Waist" title="@{Inventory_Waist}" value="Empty"/>
+            </div>
+            <div style="margin-top: 48%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Feet" title="@{Inventory_Feet}" value="Empty"/>
+            </div>
+            <div style="margin-top: 55%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Misc1" title="@{Inventory_Misc1}" value="Empty"/>
+            </div>
+            <div style="margin-top: 5%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Misc2" title="@{Inventory_Misc2}" value="Empty"/>
+            </div>
+            <div style="margin-top: 5%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Misc3" title="@{Inventory_Misc3}" value="Empty"/>
+            </div>
+        </div>
+        <div class="sheet-col sheet-doll-left-center">
+            <div style="margin-top: 386.5%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Misc4" title="@{Inventory_Misc4}" value="Empty"/>
+            </div>
+            <div style="margin-top: 5%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Misc5" title="@{Inventory_Misc5}" value="Empty"/>
+            </div>
+            <div style="margin-top: 5%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Misc6" title="@{Inventory_Misc6}" value="Empty"/>
+            </div>
+        </div>
+        <div class="sheet-col sheet-doll-right-center">
+            &nbsp;
+        </div>
+        <div class="sheet-col sheet-doll-right">
+            <div>
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Head" title="@{Inventory_Head}" value="Empty"/>
+            </div>
+            <div style="margin-top: 59%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Shoulders" title="@{Inventory_Shoulders}" value="Empty"/>
+            </div>
+            <div style="margin-top: 54%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Torso" title="@{Inventory_Torso}" value="Empty"/>
+            </div>
+            <div style="margin-top: 62%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Arms" title="@{Inventory_Arms}" value="Empty"/>
+            </div>
+            <div style="margin-top: 51%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Ring1" title="@{Inventory_Ring1}" value="Empty"/>
+            </div>
+            <div style="margin-top: 5%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Ring2" title="@{Inventory_Ring2}" value="Empty"/>
+            </div>
+            <div style="margin-top: 52%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Weapon1" title="@{Inventory_Weapon1}" value="Empty"/>
+            </div>
+            <div style="margin-top: 5%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Weapon2" title="@{Inventory_Weapon2}" value="Empty"/>
+            </div>
+            <div style="margin-top: 5%">
+                <input type="text" class="sheet-doll" style="width: 100%" name="attr_Inventory_Weapon3" title="@{Inventory_Weapon3}" value="Empty"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Roll Templates -->
+
+<!-- Attack Roll Template -->
+<rolltemplate class="sheet-rolltemplate-attacks">
+    <table class="sheet-rolltemplate-attacks">
+        {{#name}}<tr><th>{{name}}</th></tr>{{/name}}
+        {{#subtag}}<tr><td class="sheet-subheader">{{subtag}}</td></tr>{{/subtag}}
+        
+        {{#attack1}}<tr><td><span class="sheet-tcat">Attack: </span>{{attack1}}</td></tr>{{/attack1}}
+        {{#hitac}}
+            {{#rollLess() attack1 hitac }}
+                <tr><td><span class="sheet-tcat">Probably a Miss!</span></td></tr>
+            {{/rollLess() attack1 hitac }}
+        {{/hitac}}
+        {{#hitac10}}
+            {{#rollTotal() attack1 hitac10 }}
+                <tr><td><span class="sheet-tcat">Hits: AC 10 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac10 }}
+        {{/hitac10}}
+        {{#hitac9}}
+            {{#rollTotal() attack1 hitac9 }}
+                <tr><td><span class="sheet-tcat">Hits: AC 9 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac9 }}
+        {{/hitac9}}
+        {{#hitac8}}
+            {{#rollTotal() attack1 hitac8 }}
+                <tr><td><span class="sheet-tcat">Hits: AC 8 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac8 }}
+        {{/hitac8}}
+        {{#hitac7}}
+            {{#rollTotal() attack1 hitac7 }}
+                <tr><td><span class="sheet-tcat">Hits: AC 7 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac7 }}
+        {{/hitac7}}
+        {{#hitac6}}
+            {{#rollTotal() attack1 hitac6 }}
+                <tr><td><span class="sheet-tcat">Hits: AC 6 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac6 }}
+        {{/hitac6}}
+        {{#hitac5}}
+            {{#rollTotal() attack1 hitac5 }}
+                <tr><td><span class="sheet-tcat">Hits: AC 5 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac5 }}
+        {{/hitac5}}
+        {{#hitac4}}
+            {{#rollTotal() attack1 hitac4 }}
+                <tr><td><span class="sheet-tcat">Hits: AC 4 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac4 }}
+        {{/hitac4}}
+        {{#hitac3}}
+            {{#rollTotal() attack1 hitac3 }}
+                <tr><td><span class="sheet-tcat">Hits: AC 3 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac3 }}
+        {{/hitac3}}
+        {{#hitac2}}
+            {{#rollTotal() attack1 hitac2 }}
+                <tr><td><span class="sheet-tcat">Hits: AC 2 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac2 }}
+        {{/hitac2}}
+        {{#hitac1}}
+            {{#rollTotal() attack1 hitac1 }}
+                <tr><td><span class="sheet-tcat">Hits: AC 1 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac1 }}
+        {{/hitac1}}
+        {{#hitac0}}
+            {{#rollTotal() attack1 hitac0 }}
+                <tr><td><span class="sheet-tcat">Hits: AC 0 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac0 }}
+        {{/hitac0}}
+        {{#hitac-1}}
+            {{#rollTotal() attack1 hitac-1 }}
+                <tr><td><span class="sheet-tcat">Hits: AC -1 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac-1 }}
+        {{/hitac-1}}
+        {{#hitac-2}}
+            {{#rollTotal() attack1 hitac-2 }}
+                <tr><td><span class="sheet-tcat">Hits: AC -2 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac-2 }}
+        {{/hitac-2}}
+        {{#hitac-3}}
+            {{#rollTotal() attack1 hitac-3 }}
+                <tr><td><span class="sheet-tcat">Hits: AC -3 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac-3 }}
+        {{/hitac-3}}
+        {{#hitac-4}}
+            {{#rollTotal() attack1 hitac-4 }}
+                <tr><td><span class="sheet-tcat">Hits: AC -4 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac-4 }}
+        {{/hitac-4}}
+        {{#hitac-5}}
+            {{#rollTotal() attack1 hitac-5 }}
+                <tr><td><span class="sheet-tcat">Hits: AC -5 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac-5 }}
+        {{/hitac-5}}
+        {{#hitac-6}}
+            {{#rollTotal() attack1 hitac-6 }}
+                <tr><td><span class="sheet-tcat">Hits: AC -6 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac-6 }}
+        {{/hitac-6}}
+        {{#hitac-7}}
+            {{#rollTotal() attack1 hitac-7 }}
+                <tr><td><span class="sheet-tcat">Hits: AC -7 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac-7 }}
+        {{/hitac-7}}
+        {{#hitac-8}}
+            {{#rollTotal() attack1 hitac-8 }}
+                <tr><td><span class="sheet-tcat">Hits: AC -8 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac-8 }}
+        {{/hitac-8}}
+        {{#hitac-9}}
+            {{#rollTotal() attack1 hitac-9 }}
+                <tr><td><span class="sheet-tcat">Hits: AC -9 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac-9 }}
+        {{/hitac-9}}
+        {{#hitac-10}}
+            {{#rollTotal() attack1 hitac-10 }}
+                <tr><td><span class="sheet-tcat">Hits: AC -10 and Higher</span></td></tr>
+            {{/rollTotal() attack1 hitac-10 }}
+        {{/hitac-10}}
+        {{#damage1vsSM}}<tr><td><span class="sheet-tcat">Damage vs S/M: </span>{{damage1vsSM}}</td></tr>{{/damage1vsSM}}
+        {{#damage1vsL}}<tr><td><span class="sheet-tcat">Damage vs L: </span>{{damage1vsL}}</td></tr>{{/damage1vsL}}
+        
+        {{#attack2}}<tr><td><span class="sheet-tcat">Attack 2: </span>{{attack2}}</td></tr>{{/attack2}}
+        {{#damage2vsSM}}<tr><td><span class="sheet-tcat">Damage vs S/M: </span>{{damage2vsSM}}</td></tr>{{/damage2vsSM}}
+        {{#damage2vsL}}<tr><td><span class="sheet-tcat">Damage vs L: </span>{{damage2vsL}}</td></tr>{{/damage2vsL}}
+        
+        {{#attack3}}<tr><td><span class="sheet-tcat">Attack 3: </span>{{attack3}}</td></tr>{{/attack3}}
+        {{#damage3vsSM}}<tr><td><span class="sheet-tcat">Damage vs S/M: </span>{{damage3vsSM}}</td></tr>{{/damage3vsSM}}
+        {{#damage3vsL}}<tr><td><span class="sheet-tcat">Damage vs L: </span>{{damage3vsL}}</td></tr>{{/damage3vsL}}        
+        
+        {{#attack4}}<tr><td><span class="sheet-tcat">Attack 4: </span>{{attack4}}</td></tr>{{/attack4}}
+        {{#damage4vsSM}}<tr><td><span class="sheet-tcat">Damage vs S/M: </span>{{damage4vsSM}}</td></tr>{{/damage4vsSM}}
+        {{#damage4vsL}}<tr><td><span class="sheet-tcat">Damage vs L: </span>{{damage4vsL}}</td></tr>{{/damage4vsL}}       
+        
+        {{#critfail}}
+            {{#rollWasFumble() attack1 }}
+                <tr><td><span class="sheet-tcat">Fumble: </span>{{critfail}}</td></tr>
+            {{/rollWasFumble() attack1 }}
+        {{/critfail}}
+        
+        {{#critsuccess}}
+            {{#rollWasCrit() attack1 }}
+                <tr><td><span class="sheet-tcat">Critical: </span>{{critsuccess}}</td></tr>
+            {{/rollWasCrit() attack1 }}
+        {{/critsuccess}}
+        
+        {{#ToHitAC-10to0}}<tr><td class="sheet-ToHit">-10|-9|-8|-7|-6|-5|-4|-3|-2|-1|&nbsp;**0**<br>{{ToHitAC-10to0}}</td></tr>{{/ToHitAC-10to0}}
+        {{#ToHitAC1to10}}<tr><td class="sheet-ToHit"> **0**| 1| 2| 3| 4| 5| 6| 7| 8| 9|10<br>{{ToHitAC1to10}}</td></tr>{{/ToHitAC1to10}}
+        
+        {{#allprops() name subtag attack1 hitac hitac10 hitac9 hitac8 hitac7 hitac6 hitac5 hitac4 hitac3 hitac2 hitac1 hitac0 hitac-1 hitac-2 hitac-3 hitac-4 hitac-5 hitac-6 hitac-7 hitac-8 hitac-9 hitac-10 attack2 attack3 attack4 damage1vsSM damage2vsSM damage3vsSM damage4vsSM damage1vsL damage2vsL damage3vsL damage4vsL critfail critsuccess ToHitAC-10to0 ToHitAC1to10}}
+        <tr><td><span class="sheet-tcat">{{key}} = </span>{{value}}</td></tr>
+        {{/allprops() name subtag attack1 hitac hitac10 hitac9 hitac8 hitac7 hitac6 hitac5 hitac4 hitac3 hitac2 hitac1 hitac0 hitac-1 hitac-2 hitac-3 hitac-4 hitac-5 hitac-6 hitac-7 hitac-8 hitac-9 hitac-10 attack2 attack3 attack4 damage1vsSM damage2vsSM damage3vsSM damage4vsSM damage1vsL damage2vsL damage3vsL damage4vsL critfail critsuccess ToHitAC-10to0 ToHitAC1to10}}
+    </table>
+</rolltemplate>
+
+<rolltemplate class="sheet-rolltemplate-general">
+    <table class="sheet-rolltemplate-general">
+    	{{#name}}<tr><th colspan="2">{{name}}</th></tr>{{/name}}
+        {{#subtag}}<tr><td colspan="2" class="sheet-subheader">{{subtag}}</td></tr>{{/subtag}}
+
+        {{#allprops() name subtag}}
+        <tr><td style="vertical-align:middle;"><span class="sheet-tcat">{{key}}</span></td><td>{{value}}</td></tr>
+        {{/allprops() name subtag}}
+    </table>
+</rolltemplate>
+
+<rolltemplate class="sheet-rolltemplate-thievery">
+    <table class="sheet-rolltemplate-thievery">
+        {{#name}}<tr><th colspan="2">{{name}}</th></tr>{{/name}}
+        {{#subtag}}<tr><td colspan="2" class="sheet-subheader">{{subtag}}</td></tr>{{/subtag}}
+
+        {{#allprops() name subtag}}
+        <tr><td style="vertical-align:middle;"><span class="sheet-tcat">{{key}}</span></td><td>{{value}}</td></tr>
+        {{/allprops() name subtag}}
+    </table>
+</rolltemplate>
